@@ -1,0 +1,1499 @@
+!SESSION 2012-06-12 16:19:26.433 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:39:29.059
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE Software being installed: Java EE Developer Tools 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM (org.eclipse.jst.feature.group 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE Java Development Tools Core 3.7.3.v20120119-1537 (org.eclipse.jdt.core 3.7.3.v20120119-1537)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE Java Development Tools Core 3.4.4.v_894_R34x (org.eclipse.jdt.core 3.4.4.v_894_R34x)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE From: Eclipse Java Development Tools 3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1 (org.eclipse.jdt.feature.group 3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE To: org.eclipse.jdt.core [3.7.3.v20120119-1537]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE From: Java EE Developer Tools 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM (org.eclipse.jst.feature.group 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE To: org.eclipse.jst.web_ui.feature.feature.group [3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE From: Structured Source JSP Model 1.2.121.v200901290830 (org.eclipse.jst.jsp.core 1.2.121.v200901290830)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE To: bundle org.eclipse.jdt.core [3.4.0,3.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE From: JST Web Core 3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t (org.eclipse.jst.web_core.feature.feature.group 3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE To: org.eclipse.jst.jsp.core [1.2.121.v200901290830]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE From: JST Web UI 3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT (org.eclipse.jst.web_ui.feature.feature.group 3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.059
+!MESSAGE To: org.eclipse.jst.web_core.feature.feature.group [3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.059
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Eclipse Project SDK 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8 (org.eclipse.sdk.feature.group 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jdt.feature.group [3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.sdk.feature.group [3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:39:29.069
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE Software being installed: Java EE Developer Tools 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM (org.eclipse.jst.feature.group 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE Java Development Tools Core 3.7.3.v20120119-1537 (org.eclipse.jdt.core 3.7.3.v20120119-1537)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE Java Development Tools Core 3.4.4.v_894_R34x (org.eclipse.jdt.core 3.4.4.v_894_R34x)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Eclipse Java Development Tools 3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1 (org.eclipse.jdt.feature.group 3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jdt.core [3.7.3.v20120119-1537]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Java EE Developer Tools 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM (org.eclipse.jst.feature.group 3.0.4.v200811190840-7U1959LJIHM6ogLbhvbrAnWtxuyM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jst.web_ui.feature.feature.group [3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Structured Source JSP Model 1.2.121.v200901290830 (org.eclipse.jst.jsp.core 1.2.121.v200901290830)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: bundle org.eclipse.jdt.core [3.4.0,3.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: JST Web Core 3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t (org.eclipse.jst.web_core.feature.feature.group 3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jst.jsp.core [1.2.121.v200901290830]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: JST Web UI 3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT (org.eclipse.jst.web_ui.feature.feature.group 3.0.4.v200811251652-7E4EAvDgz-Y1htmiH5158SnFBSiT)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jst.web_core.feature.feature.group [3.0.4.v200811260650-7Q7AEf1EHhHehNmEARhS7t]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Eclipse Project SDK 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8 (org.eclipse.sdk.feature.group 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE To: org.eclipse.jdt.feature.group [3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:29.069
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.069
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:29.079
+!MESSAGE To: org.eclipse.sdk.feature.group [3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:39:35.057
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE Software being installed: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: Eclipse Platform 3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q (org.eclipse.platform.feature.group 3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: org.eclipse.rcp.feature.group [3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: Eclipse RCP 3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272 (org.eclipse.rcp.feature.group 3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: com.ibm.icu [4.4.2.v20110823]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: Eclipse Project SDK 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8 (org.eclipse.sdk.feature.group 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: org.eclipse.platform.feature.group [3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: org.eclipse.sdk.feature.group [3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.057
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.057
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:39:35.067
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE Software being installed: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: Eclipse Platform 3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q (org.eclipse.platform.feature.group 3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: org.eclipse.rcp.feature.group [3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: Eclipse RCP 3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272 (org.eclipse.rcp.feature.group 3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: com.ibm.icu [4.4.2.v20110823]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: Eclipse Project SDK 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8 (org.eclipse.sdk.feature.group 3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: org.eclipse.platform.feature.group [3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: org.eclipse.sdk.feature.group [3.7.2.r37x_v20111213-7Q7xALDPb32vCjY6UACVPdFTz-icPtJkUadz0lMmk4z-8]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:39:35.067
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:39:35.067
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:40:12.283
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.283
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.283
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 16:40:12.299
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 16:40:12.299
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 16:40:12.299
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:51:26.622
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/stp/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:51:26.637
+!MESSAGE No repository found at http://download.eclipse.org/stp/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:51:32.706
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:51:32.706
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:51:40.740
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/tools/buckminster/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:51:40.740
+!MESSAGE No repository found at http://download.eclipse.org/tools/buckminster/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:22.205
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/nab/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:22.205
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/nab/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:25.325
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/stp/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:25.325
+!MESSAGE No repository found at http://download.eclipse.org/stp/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:25.340
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:25.340
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:25.340
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/tools/buckminster/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:25.340
+!MESSAGE No repository found at http://download.eclipse.org/tools/buckminster/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:25.356
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/nab/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:25.356
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/nab/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:25.964
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/webtools/updates/content.xml.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:189)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:749)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket operation on nonsocket: configureBlocking
+	at java.net.DualStackPlainSocketImpl.configureBlocking(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:227)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2012-06-12 16:52:25.964
+!MESSAGE Unable to read repository at http://download.eclipse.org/webtools/updates/content.xml.
+!STACK 0
+java.net.SocketException: Socket operation on nonsocket: configureBlocking
+	at java.net.DualStackPlainSocketImpl.configureBlocking(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:227)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:33.156
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/stp/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:33.156
+!MESSAGE No repository found at http://download.eclipse.org/stp/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:33.156
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:33.156
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:33.171
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/tools/buckminster/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:33.171
+!MESSAGE No repository found at http://download.eclipse.org/tools/buckminster/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:52:33.171
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/nab/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:52:33.187
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/nab/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:53:58.226
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/modeling/m2m/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:53:58.242
+!MESSAGE No repository found at http://download.eclipse.org/modeling/m2m/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 16:57:23.144
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 16:57:23.144
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2012-06-12 16:57:23.565
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=hardClose;severity4;exception=java.io.IOException: Stream closed;children=[]]
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:170)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:184)
+	at org.apache.commons.httpclient.ChunkedInputStream.exhaustInputStream(ChunkedInputStream.java:369)
+	at org.apache.commons.httpclient.ContentLengthInputStream.close(ContentLengthInputStream.java:118)
+	at java.io.FilterInputStream.close(Unknown Source)
+	at org.apache.commons.httpclient.AutoCloseInputStream.notifyWatcher(AutoCloseInputStream.java:194)
+	at org.apache.commons.httpclient.AutoCloseInputStream.close(AutoCloseInputStream.java:158)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.hardClose(AbstractRetrieveFileTransfer.java:331)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:396)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.cancel(HttpClientRetrieveFileTransfer.java:382)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.handleTransferEvent(FileReader.java:173)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.fireTransferReceiveDataEvent(AbstractRetrieveFileTransfer.java:388)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.fireTransferReceiveDataEvent(HttpClientRetrieveFileTransfer.java:1163)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.handleReceivedData(AbstractRetrieveFileTransfer.java:288)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:173)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:00:08.143
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:00:08.143
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:01:17.357
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:01:17.357
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2012-06-12 17:01:31.428
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=hardClose;severity4;exception=java.io.IOException: Stream closed;children=[]]
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:170)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:184)
+	at org.apache.commons.httpclient.ChunkedInputStream.exhaustInputStream(ChunkedInputStream.java:369)
+	at org.apache.commons.httpclient.ContentLengthInputStream.close(ContentLengthInputStream.java:118)
+	at java.io.FilterInputStream.close(Unknown Source)
+	at org.apache.commons.httpclient.AutoCloseInputStream.notifyWatcher(AutoCloseInputStream.java:194)
+	at org.apache.commons.httpclient.AutoCloseInputStream.close(AutoCloseInputStream.java:158)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.hardClose(AbstractRetrieveFileTransfer.java:331)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:396)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.cancel(HttpClientRetrieveFileTransfer.java:382)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.handleTransferEvent(FileReader.java:173)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.fireTransferReceiveDataEvent(AbstractRetrieveFileTransfer.java:388)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.fireTransferReceiveDataEvent(HttpClientRetrieveFileTransfer.java:1163)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.handleReceivedData(AbstractRetrieveFileTransfer.java:288)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:173)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:01:34.046
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/dd/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:01:34.046
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:05:04.042
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/modeling/m2m/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:05:04.042
+!MESSAGE No repository found at http://download.eclipse.org/modeling/m2m/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:05:07.717
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://www.eclipse.org/modeling/emft/?project=search#search.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:05:07.717
+!MESSAGE No repository found at http://www.eclipse.org/modeling/emft/?project=search#search.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:05:10.587
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://eclipse.org/tptp/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:05:10.587
+!MESSAGE No repository found at http://eclipse.org/tptp/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:06:51.823
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/stp/updates/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.823
+!MESSAGE No repository found at http://download.eclipse.org/stp/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:06:51.823
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/tools/buckminster/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.823
+!MESSAGE No repository found at http://download.eclipse.org/tools/buckminster/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:06:51.823
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/dsdp/nab/updates.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.823
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/nab/updates.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-06-12 17:06:51.823
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/rt/rap/update-site.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:636)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.823
+!MESSAGE No repository found at http://download.eclipse.org/rt/rap/update-site.
+
+!ENTRY org.eclipse.equinox.p2.ui 4 1000 2012-06-12 17:06:51.838
+!MESSAGE Some sites could not be found.  See the error log for more detail.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/dd/updates.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/modeling/m2m/updates/.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://www.eclipse.org/modeling/emft/?project=search#search.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://eclipse.org/tptp/updates/.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/stp/updates/.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/tools/buckminster/updates.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/dsdp/nab/updates.
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-06-12 17:06:51.838
+!MESSAGE No repository found at http://download.eclipse.org/rt/rap/update-site.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:06:55.945
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:06:55.945
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:06:55.945
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:06:55.945
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:08.934
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:08.934
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:08.934
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:08.934
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:08.950
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:08.950
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:08.950
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:08.950
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:19.137
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:19.137
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE Software being installed: PDT SDK Feature 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI (org.eclipse.php.sdk_feature.feature.group 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:19.137
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE From: PDT SDK Feature 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI (org.eclipse.php.sdk_feature.feature.group 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.3.v20080603-79-7PE7QYGHNH6Gh]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:19.137
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:19.137
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE Software being installed: PDT SDK Feature 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI (org.eclipse.php.sdk_feature.feature.group 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:19.137
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE From: PDT SDK Feature 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI (org.eclipse.php.sdk_feature.feature.group 1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:19.137
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.3.v20080603-79-7PE7QYGHNH6Gh]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:39.930
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:39.930
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:39.930
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:39.930
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:07:39.930
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:07:39.930
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:39.930
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:07:39.930
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:32.605
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.605
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.605
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:32.615
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:32.615
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:32.615
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:41.630
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:41.630
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:41.630
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:41.630
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:41.630
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:41.630
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:41.630
+!MESSAGE Software being installed: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:41.630
+!MESSAGE Missing requirement: PDT Feature 1.0.3.v20080603-79-7PE7QYGHNH6Gh (org.eclipse.php_feature.feature.group 1.0.3.v20080603-79-7PE7QYGHNH6Gh) requires 'org.eclipse.wst.feature.group [2.0.0,3.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:47.511
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:09:47.511
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.4.2.v20110823 (com.ibm.icu 4.4.2.v20110823)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE International Components for Unicode for Java (ICU4J) 3.8.1.v20080530 (com.ibm.icu 3.8.1.v20080530)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox p2 RCP Management Facilities 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO (org.eclipse.equinox.p2.rcp.feature.feature.group 1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.ui.sdk.scheduler [1.0.100.v20110815-1419]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox Provisioning Platform Automatic Update Support 1.0.100.v20110815-1419 (org.eclipse.equinox.p2.ui.sdk.scheduler 1.0.100.v20110815-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: package com.ibm.icu.util 4.0.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Equinox p2 Provisioning for IDEs. 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl (org.eclipse.equinox.p2.user.ui.feature.group 2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.rcp.feature.feature.group [1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.wst.feature.group [3.0.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.equinox.p2.user.ui.feature.group [2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: Web Developer Tools 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai (org.eclipse.wst.feature.group 3.0.4.v200811190840-7A-8l8Qqcz0HyVgjXUE-iuOYZ9ai)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: org.eclipse.wst.jsdt.feature.feature.group [1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE From: JavaScript Development Tools Core 1.0.104.v200901281939 (org.eclipse.wst.jsdt.core 1.0.104.v200901281939)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.511
+!MESSAGE To: bundle com.ibm.icu [3.8.1,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:09:47.511
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.527
+!MESSAGE From: JavaScript Developer Tools 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN (org.eclipse.wst.jsdt.feature.feature.group 1.0.4.v200812112112-6-E75BcMAAyDJGhFpNN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:09:47.527
+!MESSAGE To: org.eclipse.wst.jsdt.core [1.0.104.v200901281939]
+!SESSION 2012-06-12 17:14:15.671 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:16:54.606
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-06-12 17:16:54.606
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10004 2012-06-12 17:16:54.606
+!MESSAGE "Eclipse SDK" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:16:54.636
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-06-12 17:16:54.636
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10004 2012-06-12 17:16:54.636
+!MESSAGE "Eclipse SDK" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:17:11.305
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Software being installed: Eclipse Platform SDK 3.4.2.M20090211-1700 (org.eclipse.platform.sdk 3.4.2.M20090211-1700)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Equinox Launcher 1.2.0.v20110502 (org.eclipse.equinox.launcher 1.2.0.v20110502)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Equinox Launcher 1.0.101.R34x_v20081125 (org.eclipse.equinox.launcher 1.0.101.R34x_v20081125)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse Platform SDK 3.4.2.M20090211-1700 (org.eclipse.platform.sdk 3.4.2.M20090211-1700)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.equinox.launcher [1.0.101.R34x_v20081125]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse Product Configuration 1.0.0.M20120208-0800 (org.eclipse.rcp.configuration.feature.group 1.0.0.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.equinox.launcher [1.2.0.v20110502]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.rcp.configuration.feature.group [1.0.0.M20120208-0800]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:17:11.315
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Software being installed: Eclipse Platform SDK 3.4.2.M20090211-1700 (org.eclipse.platform.sdk 3.4.2.M20090211-1700)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Software currently installed: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Equinox Launcher 1.2.0.v20110502 (org.eclipse.equinox.launcher 1.2.0.v20110502)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE Equinox Launcher 1.0.101.R34x_v20081125 (org.eclipse.equinox.launcher 1.0.101.R34x_v20081125)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse Platform SDK 3.4.2.M20090211-1700 (org.eclipse.platform.sdk 3.4.2.M20090211-1700)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.equinox.launcher [1.0.101.R34x_v20081125]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse Product Configuration 1.0.0.M20120208-0800 (org.eclipse.rcp.configuration.feature.group 1.0.0.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.equinox.launcher [1.2.0.v20110502]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:17:11.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE From: Eclipse SDK 3.7.2.M20120208-0800 (org.eclipse.sdk.ide 3.7.2.M20120208-0800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:17:11.315
+!MESSAGE To: org.eclipse.rcp.configuration.feature.group [1.0.0.M20120208-0800]
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 4 0 2012-06-12 17:21:08.667
+!MESSAGE org.eclipse.equinox.internal.p2.touchpoint.natives.actions.UnzipAction error unzipping zipfile: C:\Users\Simon\.eclipse\org.eclipse.platform_3.7.0_1709980481\p2\org.eclipse.equinox.p2.core\cache\binary\com.zend.php.ide.root.feature_root_9.0.3.v20120507440destination: C:\Program Files\eclipse
+!SESSION 2012-06-12 17:22:16.227 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:23:03.581
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:23:03.581
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.581
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.581
+!MESSAGE Missing requirement: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856) requires 'org.eclipse.wst.feature.group [3.0.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:23:03.581
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.581
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.581
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-06-12 17:23:03.621
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:23:03.621
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.621
+!MESSAGE Software being installed: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.621
+!MESSAGE Missing requirement: PDT Feature 1.0.5.v20081126-1856 (org.eclipse.php_feature.feature.group 1.0.5.v20081126-1856) requires 'org.eclipse.wst.feature.group [3.0.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-06-12 17:23:03.621
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.621
+!MESSAGE From: PDT SDK Feature 1.0.5.v20081126-1856 (org.eclipse.php.sdk_feature.feature.group 1.0.5.v20081126-1856)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-06-12 17:23:03.621
+!MESSAGE To: org.eclipse.php_feature.feature.group [1.0.5.v20081126-1856]
