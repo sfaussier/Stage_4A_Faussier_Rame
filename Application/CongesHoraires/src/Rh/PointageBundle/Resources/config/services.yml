@@ -1,0 +1,7 @@
+parameters:
+#    rh_pointage.example.class: Rh\PointageBundle\Example
+
+services:
+#    rh_pointage.example:
+#        class: %rh_pointage.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

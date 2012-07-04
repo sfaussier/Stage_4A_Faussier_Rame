@@ -1,0 +1,7 @@
+parameters:
+#    rh_admin.example.class: Rh\AdminBundle\Example
+
+services:
+#    rh_admin.example:
+#        class: %rh_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
