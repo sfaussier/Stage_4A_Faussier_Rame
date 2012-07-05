@@ -23,11 +23,18 @@ class User extends BaseUser
      */
     
     /**
+     * Cet attribut est surchargé mais fait parti de FOSUserBundle.
+     * Il n'aura donc pas de GETER ni de SETER.
+     * 
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    
+    /**
+     * ***************** Déclaration des attributs de notre propre classe User *****************
+     */
     
     /**
      * @var string $nom
@@ -164,12 +171,304 @@ class User extends BaseUser
      */
     protected $cadre;
     
-    
     /**
-     * Contructeur de la classe User
+     * ***************** Contructeur de la classe User *****************
      */
+    
     public function __construct()
     {
         parent::__construct();
+        $this->entreeEntreprise = new \Datetime();
+    }
+    
+    /**
+     * ***************** Getter et Setter des attributs de la classe *****************
+     */
+    /**
+     * Get nom
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+    
+    /**
+     * Set nom
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+    
+    /**
+     * Get prenom
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+    
+    /**
+     * Set prenom
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+    
+    /**
+     * Get entreeEntreprise
+     * @return \Datetime
+     */
+    public function getEntreeEntreprise()
+    {
+        return $this->entreeEntreprise;
+    }
+    
+    /**
+     * Set entreeEntreprise
+     * @param \Datetime $entreeEntreprise
+     */
+    public function setEntreeEntreprise($entreeEntreprise)
+    {
+        $this->entreeEntreprise = $entreeEntreprise;
+    }
+    
+    /**
+     * Get congesPayes
+     * @return float
+     */
+    public function getCongesPayes()
+    {
+        return $this->congesPayes;
+    }
+    
+    /**
+     * Set congesPayes
+     * @param float $congesPayes
+     */
+    public function setCongesPayes($congesPayes)
+    {
+        $this->congesPayes = $congesPayes;
+    }
+    
+    /**
+     * Get cpPeriodePrec
+     * @return float
+     */
+    public function getCpPeriodePrec()
+    {
+        return $this->cpPeriodePrec;
+    }
+    
+    /**
+     * Set cpPeriodePrec
+     * @param float $cpPeriodePrec
+     */
+    public function setCpPeriodePrec($cpPeriodePrec)
+    {
+        $this->cpPeriodePrec = $cpPeriodePrec;
+    }
+    
+    /**
+     * Get cpReliquat
+     * @return float
+     */
+    public function getCpReliquat()
+    {
+        return $this->cpReliquat;
+    }
+    
+    /**
+     * Set cpReliquat
+     * @param float $cpReliquat
+     */
+    public function setCpReliquat($cpReliquat)
+    {
+        $this->cpReliquat = $cpReliquat;
+    }
+    
+    /**
+     * Get dep
+     * @return float
+     */
+    public function getDep()
+    {
+        return $this->dep;
+    }
+    
+    /**
+     * Set dep
+     * @param float $dep
+     */
+    public function setDep($dep)
+    {
+        $this->dep = $dep;
+    }
+    
+    /**
+     * Get depMaj
+     * @return float
+     */
+    public function getDepMaj()
+    {
+        return $this->depMaj;
+    }
+    
+    /**
+     * Set depMaj
+     * @param float $depMaj
+     */
+    public function setDepMaj($depMaj)
+    {
+        $this->depMaj = $depMaj;
+    }
+    
+    /**
+     * Get reposCompensatoires
+     * @return float
+     */
+    public function getReposCompensatoires()
+    {
+        return $this->reposCompensatoires;
+    }
+    
+    /**
+     * Set reposCompensatoires
+     * @param float $reposCompensatoires
+     */
+    public function setReposCompensatoires($reposCompensatoires)
+    {
+        $this->reposCompensatoires = $reposCompensatoires;
+    }
+    
+    /**
+     * Get rttEmployeur
+     * @return float
+     */
+    public function getRttEmployeur()
+    {
+        return $this->rttEmployeur;
+    }
+    
+    /**
+     * Set rttEmployeur
+     * @param float $rttEmployeur
+     */
+    public function setRttEmployeur($rttEmployeur)
+    {
+        $this->rttEmployeur = $rttEmployeur;
+    }
+    
+    /**
+     * Get rttSalarie
+     * @return float
+     */
+    public function getRttSalarie()
+    {
+        return $this->rttSalarie;
+    }
+    
+    /**
+     * Set rttSalarie
+     * @param float $rttSalarie
+     */
+    public function setRttSalarie($rttSalarie)
+    {
+        $this->rttSalarie = $rttSalarie;
+    }
+    
+    /**
+     * Get nbJourPresenceAnnee
+     * @return float
+     */
+    public function getNbJourPresenceAnnee()
+    {
+        return $this->nbJourPresenceAnnee;
+    }
+    
+    /**
+     * Set nbJourPresenceAnnee
+     * @param float $nbJourPresenceAnnee
+     */
+    public function setNbJourPresenceAnnee($nbJourPresenceAnnee)
+    {
+        $this->nbJourPresenceAnnee = $nbJourPresenceAnnee;
+    }
+    
+    /**
+     * Get nbJourPresenceAnneePrec
+     * @return float
+     */
+    public function getNbJourPresenceAnneePrec()
+    {
+        return $this->nbJourPresenceAnneePrec;
+    }
+    
+    /**
+     * Set nbJourPresenceAnneePrec
+     * @param float $nbJourPresenceAnneePrec
+     */
+    public function setNbJourPresenceAnneePrec($nbJourPresenceAnneePrec)
+    {
+        $this->nbJourPresenceAnneePrec = $nbJourPresenceAnneePrec;
+    }
+    
+    /**
+     * Get nbHAnnee
+     * @return float
+     */
+    public function getNbHAnnee()
+    {
+        return $this->nbHAnnee;
+    }
+    
+    /**
+     * Set nbHAnnee
+     * @param float $nbHAnnee
+     */
+    public function setNbHAnnee($nbHAnnee)
+    {
+        $this->nbHAnnee = $nbHAnnee;
+    }
+    
+    /**
+     * Get nbHAnneePrec
+     * @return float
+     */
+    public function getNbHAnneePrec()
+    {
+        return $this->nbHAnneePrec;
+    }
+    
+    /**
+     * Set nbHAnneePrec
+     * @param float $nbHAnneePrec
+     */
+    public function setNbHAnneePrec($nbHAnneePrec)
+    {
+        $this->nbHAnneePrec = $nbHAnneePrec;
+    }
+    
+    /**
+     * Get cadre
+     * @return boolean
+     */
+    public function getCadre()
+    {
+        return $this->cadre;
+    }
+    
+    /**
+     * Set cadre
+     * @param boolean $cadre
+     */
+    public function setCadre($cadre)
+    {
+        $this->cadre = $cadre;
     }
 }
