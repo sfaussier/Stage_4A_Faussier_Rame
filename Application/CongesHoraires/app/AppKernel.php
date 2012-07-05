@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new Rh\AdminBundle\RhAdminBundle(),
             new Rh\PointageBundle\RhPointageBundle(),
             new Rh\CongesBundle\RhCongesBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new Rh\UserBundle\RhUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
