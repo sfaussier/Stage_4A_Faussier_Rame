@@ -1,3 +1,4 @@
 Application/.metadata/*
 Application/CongesHoraires/.settings/*
 Application/CongesHoraires/app/cache/*
+Application/CongesHoraires/app/logs/*
