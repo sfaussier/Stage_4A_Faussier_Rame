@@ -39,7 +39,7 @@ class User extends BaseUser
     /**
      * @var string $nom
      * 
-     * @ORM\Column(name="nom", type="string", length=32)
+     * @ORM\Column(name="nom", type="string", length=32, nullable=true)
      * @Assert\NotBlank()
      */
     protected $nom;
@@ -167,13 +167,16 @@ class User extends BaseUser
     /**
      * @var boolean $cadre
      *
-     * @ORM\Column(name="cadre", type="boolean")
+     * @ORM\Column(name="cadre", type="boolean", nullable=true)
+     * @Assert\NotBlank()
      */
     protected $cadre;
+    
     
     /**
      * ***************** Contructeur de la classe User *****************
      */
+    
     
     public function __construct()
     {
@@ -181,9 +184,12 @@ class User extends BaseUser
         $this->entreeEntreprise = new \Datetime();
     }
     
+    
     /**
      * ***************** Getter et Setter des attributs de la classe *****************
      */
+    
+    
     /**
      * Get nom
      * @return string

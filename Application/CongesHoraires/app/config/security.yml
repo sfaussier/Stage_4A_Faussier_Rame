@@ -1,5 +1,6 @@
 security:
     encoders:
+        "FOS\UserBundle\Model\UserInterface": sha512
         Symfony\Component\Security\Core\User\User: plaintext
 
     role_hierarchy:
@@ -7,6 +8,8 @@ security:
         ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
     providers:
+        fos_userbundle: 
+            id: fos_user.user_manager
         in_memory:
             users:
                 user:  { password: userpass, roles: [ 'ROLE_USER' ] }
@@ -17,21 +20,23 @@ security:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        login:
-            pattern:  ^/demo/secured/login$
-            security: false
-
-        secured_area:
-            pattern:    ^/demo/secured/
-            form_login:
-                check_path: /demo/secured/login_check
-                login_path: /demo/secured/login
-            logout:
-                path:   /demo/secured/logout
-                target: /demo/
-            #anonymous: ~
-            #http_basic:
-            #    realm: "Secured Demo Area"
+        # Firewall de la partie CONNEXION de notre site
+        login: 
+            pattern:  ^/login$ # L'adresse de la page LOGIN
+            anonymous: true # Tout le monde peut avoir acc�s a cette page.
+        
+        # Firewall pour le reste de l'application
+        main: 
+            pattern: ^/ # Toutes les pages du site (sauf LOGIN car elle est mise avant)
+            form_login: 
+                provider: fos_userbundle # Méthode d'authentification
+                remember_me: true # L'utilisiateur peut garder la session active
+            remember_me: 
+                key: %secret% # Cl� pour garder l'authentification
+            anonymous: false # Seul les utilisateurs connect�s peuvent accéder à ces pages
+            logout: 
+                path: /logout # Page de déconnexion
+                target: / # Page après déconnexion
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
