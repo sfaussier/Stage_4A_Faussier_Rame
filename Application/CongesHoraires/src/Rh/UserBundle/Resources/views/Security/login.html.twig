@@ -2,7 +2,7 @@
 
 {% block fos_user_content %}
 {% if error %}
-    <div>{{ error|trans([], 'RhUserBundle') }}</div>
+    <div>{{ error|trans({}, 'RhUserBundle') }}</div>
 {% endif %}
 
 <form action="{{ path("fos_user_security_check") }}" method="post">
