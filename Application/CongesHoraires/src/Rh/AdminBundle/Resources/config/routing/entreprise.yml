@@ -1,0 +1,30 @@
+entreprise:
+    pattern:  /
+    defaults: { _controller: "RhAdminBundle:Entreprise:index" }
+
+entreprise_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "RhAdminBundle:Entreprise:show" }
+
+entreprise_new:
+    pattern:  /new
+    defaults: { _controller: "RhAdminBundle:Entreprise:new" }
+
+entreprise_create:
+    pattern:  /create
+    defaults: { _controller: "RhAdminBundle:Entreprise:create" }
+    requirements: { _method: post }
+
+entreprise_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "RhAdminBundle:Entreprise:edit" }
+
+entreprise_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "RhAdminBundle:Entreprise:update" }
+    requirements: { _method: post }
+
+entreprise_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "RhAdminBundle:Entreprise:delete" }
+    requirements: { _method: post }
