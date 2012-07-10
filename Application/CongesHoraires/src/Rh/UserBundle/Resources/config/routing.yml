@@ -1,0 +1,3 @@
+rhuser_index: 
+    pattern: /
+    defaults: { _controller: RhUserBundle:User:index }

@@ -30,13 +30,15 @@ security:
             pattern: ^/ # Toutes les pages du site (sauf LOGIN car elle est mise avant)
             form_login: 
                 provider: fos_userbundle # Méthode d'authentification
+                always_use_default_target_path: false # On ne redirige pas tout le temps vers la redirection par défaut
+                default_target_path: /user # La redirection par défaut est /blog
                 remember_me: true # L'utilisiateur peut garder la session active
             remember_me: 
                 key: %secret% # Cl� pour garder l'authentification
             anonymous: false # Seul les utilisateurs connect�s peuvent accéder à ces pages
             logout: 
                 path: /logout # Page de déconnexion
-                target: / # Page après déconnexion
+                target: /login # Page après déconnexion
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

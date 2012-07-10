@@ -1,0 +1,10 @@
+{# Accueil après connexion #}
+{% extends "RhUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    <div>
+        <h2 align="center">
+            Bienvenue {{ utilisateur.prenom }} {{ utilisateur.nom }}
+        </h2>
+    </div>
+{% endblock fos_user_content %}

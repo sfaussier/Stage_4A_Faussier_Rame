@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>{% block titre %}Ressources Humaines{% endblock %}</title>
+    <title>{% block titre %}Ressources Humaines{% endblock titre %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,11 +32,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Ressources Humaines</a>
+          <a class="brand" href="{{ path('rhuser_index') }}">Ressources Humaines</a>
           <div class="nav-collapse">
             <ul class="nav">
               {% block listeMenu %}
-              {% endblock %}
+              {% endblock listeMenu %}
+            </ul>
+            <ul class="nav pull-right">
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    {{ app.user.username }} - <a class="btn btn-primary" href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+                {% else %}
+                    <a class="btn btn-primary" href="{{ path('fos_user_security_login') }}">Connexion</a>
+                {% endif %}
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -46,7 +53,7 @@
     <div class="container">
 
       {% block conteneur %}
-      {% endblock %}
+      {% endblock conteneur%}
     </div> <!-- /container -->
 
     <!-- Le javascript

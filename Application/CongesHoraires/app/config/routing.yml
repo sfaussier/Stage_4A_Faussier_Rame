@@ -1,14 +1,18 @@
 RhCongesBundle:
     resource: "@RhCongesBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /conges
 
 RhPointageBundle:
     resource: "@RhPointageBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /pointage
 
 RhAdminBundle:
     resource: "@RhAdminBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /admin
+    
+RhUserBundle: 
+    resource: "@RhUserBundle/Resources/config/routing.yml"
+    prefix: /user
     
 fos_user_security: 
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
