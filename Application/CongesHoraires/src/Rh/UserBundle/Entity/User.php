@@ -299,6 +299,60 @@ class User extends BaseUser
     }
     
     /**
+     * Get congesForfaites
+     * @return float
+     */
+    public function getCongesForfaites()
+    {
+        return $this->congesForfaites;
+    }
+    
+    /**
+     * Set congesForfaites
+     * @param float $congesForfaites
+     */
+    public function setCongesForfaites($congesForfaites)
+    {
+        $this->congesForfaites = $congesForfaites;
+    }
+    
+    /**
+     * Get hSup
+     * @return float
+     */
+    public function getHSup()
+    {
+        return $this->hSup;
+    }
+    
+    /**
+     * Set hSup
+     * @param float $hSup
+     */
+    public function setHSup($hSup)
+    {
+        $this->hSup = $hSup;
+    }
+    
+    /**
+     * Get hSupMaj
+     * @return float
+     */
+    public function getHSupMaj()
+    {
+        return $this->hSupMaj;
+    }
+    
+    /**
+     * Set hSupMaj
+     * @param float $hSupMaj
+     */
+    public function setHSupMaj($hSupMaj)
+    {
+        $this->hSupMaj = $hSupMaj;
+    }
+    
+    /**
      * Get dep
      * @return float
      */

@@ -1,3 +1,7 @@
 rhuser_index: 
     pattern: /
     defaults: { _controller: RhUserBundle:User:index }
+
+rhuser_ajouter: 
+    pattern: /ajouter
+    defaults: { _controller: RhUserBundle:User:ajouter }
