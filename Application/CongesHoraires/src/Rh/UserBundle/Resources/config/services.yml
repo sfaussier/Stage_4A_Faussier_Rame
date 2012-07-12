@@ -1,0 +1,5 @@
+services: 
+    rh_user.my_provider: 
+        class: Rh\UserBundle\Security\Provider\MyProvider
+        public: false
+        arguments: ["@fos_user.user_manager"]

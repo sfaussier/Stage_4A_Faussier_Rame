@@ -35,8 +35,64 @@
           <a class="brand" href="{{ path('rhuser_index') }}">Ressources Humaines</a>
           <div class="nav-collapse">
             <ul class="nav">
-              {% block listeMenu %}
-              {% endblock listeMenu %}
+                {% if is_granted("ROLE_UTILISATEUR") %}
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Pointage
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Nouveau</a></li>
+                            <li><a href="#">Vérification</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Congés
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Poser des congés</a></li>
+                            <li><a href="#">Vérification</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if is_granted("ROLE_CHEF") %}
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Validation
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Valider les congés</a></li>
+                            <li><a href="#">Valider les pointages</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if is_granted("ROLE_ADMINISTRATEUR") %}
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Utilisateurs
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ajouter</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Entreprises
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ajouter</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
             </ul>
             <ul class="nav pull-right">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}

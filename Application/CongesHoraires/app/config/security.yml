@@ -3,13 +3,15 @@ security:
         "FOS\UserBundle\Model\UserInterface": sha512
         Symfony\Component\Security\Core\User\User: plaintext
 
-    role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+    role_hierarchy: # Voir dans le layout principal pour connaitre les droits
+        ROLE_CHEF:        ROLE_UTILISATEUR
+        ROLE_SUPER_ADMIN: [ROLE_ADMINISTRATEUR, ROLE_CHEF, ROLE_ALLOWED_TO_SWITCH]
 
     providers:
         fos_userbundle: 
             id: fos_user.user_manager
+        email: # Même provider que le précédent mais il permet de s'authentifier par l'adresse email
+            id: rh_user.my_provider
         in_memory:
             users:
                 user:  { password: userpass, roles: [ 'ROLE_USER' ] }
@@ -29,7 +31,7 @@ security:
         main: 
             pattern: ^/ # Toutes les pages du site (sauf LOGIN car elle est mise avant)
             form_login: 
-                provider: fos_userbundle # Méthode d'authentification
+                provider: email # Méthode d'authentification
                 always_use_default_target_path: false # On ne redirige pas tout le temps vers la redirection par défaut
                 default_target_path: /user # La redirection par défaut est /blog
                 remember_me: true # L'utilisiateur peut garder la session active
