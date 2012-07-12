@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright 2011 Johannes M. Schmitt <schmittjoh@gmail.com>
+ * Copyright 2010 Johannes M. Schmitt <schmittjoh@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -80,5 +80,15 @@ class MethodMetadata extends BaseMethodMetadata
                 $this->paramPermissions[$index] = $permissions;
             }
         }
+    }
+
+    public function getAsArray()
+    {
+        return array(
+            'roles' => $this->roles,
+            'run_as_roles' => $this->runAsRoles,
+            'param_permissions' => $this->paramPermissions,
+            'return_permissions' => $this->returnPermissions,
+        );
     }
 }

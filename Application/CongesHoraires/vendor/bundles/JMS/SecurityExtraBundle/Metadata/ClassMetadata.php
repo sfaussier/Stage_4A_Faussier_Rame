@@ -18,76 +18,30 @@
 
 namespace JMS\SecurityExtraBundle\Metadata;
 
-use JMS\SecurityExtraBundle\Exception\RuntimeException;
-use JMS\SecurityExtraBundle\Exception\InvalidArgumentException;
-use Metadata\MethodMetadata;
-use Metadata\MergeableInterface;
-use Metadata\MergeableClassMetadata;
+use Metadata\ClassMetadata as BaseMetadata;
 
 /**
  * Contains class metadata information
  *
  * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  */
-class ClassMetadata extends MergeableClassMetadata
+class ClassMetadata extends BaseMetadata
 {
-    public function addMethodMetadata(MethodMetadata $metadata)
+    public function merge(ClassMetadata $metadata)
     {
-        if ($this->reflection->isFinal()) {
-            throw new RuntimeException(sprintf('Class "%s" is declared final, and cannot be secured.', $reflection->name));
+        if (false === $metadata->reflection->isInterface()) {
+            throw new \InvalidArgumentException('You can only merge metadata from interfaces.');
+        }
+        if (false === $this->reflection->implementsInterface($metadata->reflection->getName())) {
+            throw new \InvalidArgumentException(sprintf('"%s" does not implement "%s".', $this->reflection->getName(), $metadata->reflection->getName()));
         }
 
-        if ($metadata->reflection->isStatic()) {
-            throw new RuntimeException(sprintf('Method "%s::%s" is declared static and cannot be secured.', $metadata->reflection->class, $metadata->reflection->name));
-        }
-
-        if ($metadata->reflection->isFinal()) {
-            throw new RuntimeException(sprintf('Method "%s::%s" is declared final and cannot be secured.', $metadata->reflection->class, $metadata->reflection->name));
-        }
-
-        parent::addMethodMetadata($metadata);
-    }
-
-    public function merge(MergeableInterface $metadata)
-    {
-        if (!$metadata instanceof ClassMetadata) {
-            throw new InvalidArgumentException('$metadata must be an instance of ClassMetadata.');
-        }
-
-        foreach ($this->methodMetadata as $name => $methodMetadata) {
-            // check if metadata was declared on an interface
-            if (!$metadata->reflection->hasMethod($name)) {
-                continue;
+        foreach ($metadata->methodMetadata as $name => $method) {
+            if (!isset($this->methodMetadata[$name])) {
+                $this->methodMetadata[$name] = new MethodMetadata($metadata->name, $name);
             }
 
-            if ($metadata->reflection->getMethod($name)->getDeclaringClass()->name
-                !== $methodMetadata->class) {
-                if (!isset($metadata->methodMetadata[$name])) {
-                    if ($methodMetadata->reflection->isAbstract()) {
-                        continue;
-                    }
-
-                    throw new RuntimeException(sprintf(
-                         'You have overridden a secured method "%s::%s" in "%s". '
-                        .'Please copy over the applicable security metadata, and '
-                        .'also add @SatisfiesParentSecurityPolicy.',
-                        $methodMetadata->reflection->class,
-                        $name,
-                        $metadata->reflection->name
-                    ));
-                }
-
-                if (!$metadata->methodMetadata[$name]->satisfiesParentSecurityPolicy) {
-                    throw new RuntimeException(sprintf('Unresolved security metadata conflict for method "%s::%s" in "%s". Please copy the respective annotations, and add @SatisfiesParentSecurityPolicy to the child method.', $metadata->reflection->name, $name, $methodMetadata->reflection->getDeclaringClass()->getFilename()));
-                }
-            }
+            $this->methodMetadata[$name]->merge($method);
         }
-
-        parent::merge($metadata);
-    }
-
-    public function isProxyRequired()
-    {
-        return !empty($this->methodMetadata);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright 2011 Johannes M. Schmitt <schmittjoh@gmail.com>
+ * Copyright 2010 Johannes M. Schmitt <schmittjoh@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,20 +18,13 @@
 
 namespace JMS\SecurityExtraBundle\Security\Authorization\Interception;
 
-use JMS\SecurityExtraBundle\Exception\RuntimeException;
-use CG\Core\ClassUtils;
-
-use CG\Proxy\MethodInterceptorInterface;
-use CG\Proxy\MethodInvocation;
-use JMS\SecurityExtraBundle\Metadata\MethodMetadata;
 use JMS\SecurityExtraBundle\Security\Authentication\Token\RunAsUserToken;
+use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use JMS\SecurityExtraBundle\Security\Authorization\AfterInvocation\AfterInvocationManagerInterface;
 use JMS\SecurityExtraBundle\Security\Authorization\RunAsManagerInterface;
-use Metadata\MetadataFactoryInterface;
-use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Authorization\AccessDecisionManagerInterface;
 use Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface;
-use Symfony\Component\Security\Core\SecurityContextInterface;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundException;
@@ -41,23 +34,21 @@ use Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundE
  *
  * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  */
-class MethodSecurityInterceptor implements MethodInterceptorInterface
+class MethodSecurityInterceptor
 {
-    private $alwaysAuthenticate;
-    private $securityContext;
-    private $metadataFactory;
-    private $authenticationManager;
-    private $accessDecisionManager;
-    private $afterInvocationManager;
-    private $runAsManager;
-    private $logger;
+    protected $alwaysAuthenticate;
+    protected $securityContext;
+    protected $authenticationManager;
+    protected $accessDecisionManager;
+    protected $afterInvocationManager;
+    protected $runAsManager;
+    protected $logger;
 
-    public function __construct(SecurityContextInterface $securityContext, AuthenticationManagerInterface $authenticationManager, AccessDecisionManagerInterface $accessDecisionManager,
-                                AfterInvocationManagerInterface $afterInvocationManager, RunAsManagerInterface $runAsManager, MetadataFactoryInterface $metadataFactory, LoggerInterface $logger = null)
+    public function __construct(SecurityContext $securityContext, AuthenticationManagerInterface $authenticationManager, AccessDecisionManagerInterface $accessDecisionManager,
+                                AfterInvocationManagerInterface $afterInvocationManager, RunAsManagerInterface $runAsManager, LoggerInterface $logger = null)
     {
         $this->alwaysAuthenticate = false;
         $this->securityContext = $securityContext;
-        $this->metadataFactory = $metadataFactory;
         $this->authenticationManager = $authenticationManager;
         $this->accessDecisionManager = $accessDecisionManager;
         $this->afterInvocationManager = $afterInvocationManager;
@@ -70,16 +61,45 @@ class MethodSecurityInterceptor implements MethodInterceptorInterface
         $this->alwaysAuthenticate = !!$boolean;
     }
 
-    public function intercept(MethodInvocation $method)
+    public function invoke(MethodInvocation $method, array $metadata)
     {
-        $metadata = $this->metadataFactory->getMetadataForClass($method->reflection->class);
+        $runAsToken = $this->beforeInvocation($method, $metadata);
 
-        // no security metadata, proceed
-        if (empty($metadata) || !isset($metadata->methodMetadata[$method->reflection->name])) {
-            return $method->proceed();
+        if (true === $nonPublic = !$method->isPublic()) {
+            $method->setAccessible(true);
         }
-        $metadata = $metadata->methodMetadata[$method->reflection->name];
 
+        try {
+            $returnValue = $method->invokeArgs($method->getThis(), $method->getArguments());
+
+            if ($nonPublic) {
+                $method->setAccessible(false);
+            }
+
+            if (null !== $runAsToken) {
+                $this->restoreOriginalToken($runAsToken);
+            }
+
+            if (!$metadata['return_permissions']) {
+                return $returnValue;
+            }
+
+            return $this->afterInvocation($method, $metadata, $runAsToken, $returnValue);
+        } catch (\Exception $failed) {
+            if ($nonPublic) {
+                $method->setAccessible(false);
+            }
+
+            if (null !== $runAsToken) {
+                $this->restoreOriginalToken($runAsToken);
+            }
+
+            throw $failed;
+        }
+    }
+
+    protected function beforeInvocation(MethodInvocation $method, array $metadata)
+    {
         if (null === $token = $this->securityContext->getToken()) {
             throw new AuthenticationCredentialsNotFoundException(
                 'The security context was not populated with a Token.'
@@ -91,55 +111,46 @@ class MethodSecurityInterceptor implements MethodInterceptorInterface
             $this->securityContext->setToken($token);
         }
 
-        if (!empty($metadata->roles) && false === $this->accessDecisionManager->decide($token, $metadata->roles, $method)) {
+        if ($metadata['roles'] && false === $this->accessDecisionManager->decide($token, $metadata['roles'], $method)) {
             throw new AccessDeniedException('Token does not have the required roles.');
         }
 
-        if (!empty($metadata->paramPermissions)) {
-            foreach ($method->arguments as $index => $argument) {
-                if (null !== $argument && isset($metadata->paramPermissions[$index]) && false === $this->accessDecisionManager->decide($token, $metadata->paramPermissions[$index], $argument)) {
-                    throw new AccessDeniedException(sprintf('Token does not have the required permissions for method "%s::%s".', $method->reflection->class, $method->reflection->name));
+        if ($metadata['param_permissions']) {
+            foreach ($method->getArguments() as $index => $argument) {
+                if (null !== $argument && isset($metadata['param_permissions'][$index]) && false === $this->accessDecisionManager->decide($token, $metadata['param_permissions'][$index], $argument)) {
+                    throw new AccessDeniedException(sprintf('Token does not have the required permissions for method "%s::%s".', $method->class, $method->getName()));
                 }
             }
         }
 
         $runAsToken = null;
-        if (!empty($metadata->runAsRoles)) {
-            $runAsToken = $this->runAsManager->buildRunAs($token, $method, $metadata->runAsRoles);
+        if ($metadata['run_as_roles']) {
+            $runAsToken = $this->runAsManager->buildRunAs($token, $method, $metadata['run_as_roles']);
 
             if (null !== $this->logger) {
                 $this->logger->debug('Populating security context with RunAsToken');
             }
 
             if (null === $runAsToken) {
-                throw new RuntimeException('RunAsManager must not return null from buildRunAs().');
+                throw new \RuntimeException('RunAsManager must not return null from buildRunAs().');
             }
 
             $this->securityContext->setToken($runAsToken);
         }
 
-        try {
-            $returnValue = $method->proceed();
-
-            if (null !== $runAsToken) {
-                $this->restoreOriginalToken($runAsToken);
-            }
-
-            if (empty($metadata->returnPermissions)) {
-                return $returnValue;
-            }
-
-            return $this->afterInvocationManager->decide($this->securityContext->getToken(), $method, $metadata->returnPermissions, $returnValue);
-        } catch (\Exception $failed) {
-            if (null !== $runAsToken) {
-                $this->restoreOriginalToken($runAsToken);
-            }
-
-            throw $failed;
-        }
+        return $runAsToken;
     }
 
-    private function restoreOriginalToken(RunAsUserToken $runAsToken)
+    protected function afterInvocation(MethodInvocation $method, array $metadata, $runAsToken, $returnValue)
+    {
+        if (!$metadata['return_permissions']) {
+            return $returnValue;
+        }
+
+        return $this->afterInvocationManager->decide($this->securityContext->getToken(), $method, $metadata['return_permissions'], $returnValue);
+    }
+
+    protected function restoreOriginalToken(RunAsUserToken $runAsToken)
     {
         if (null !== $this->logger) {
             $this->logger->debug('Populating security context with original Token.');
