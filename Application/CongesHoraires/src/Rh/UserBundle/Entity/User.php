@@ -54,8 +54,8 @@ class User extends BaseUser
     /**
      * @var datetime $entreeEntreprise
      * 
-     * @ORM\Column(name="entreeEntreprise", type="datetime", nullable=true)
-     * @Assert\DateTime()
+     * @ORM\Column(name="entreeEntreprise", type="date", nullable=true)
+     * @Assert\Date()
      */
     protected $entreeEntreprise;
     
@@ -168,7 +168,6 @@ class User extends BaseUser
      * @var boolean $cadre
      *
      * @ORM\Column(name="cadre", type="boolean", nullable=true)
-     * @Assert\NotBlank()
      */
     protected $cadre;
     
@@ -181,7 +180,7 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        $this->entreeEntreprise = new \Datetime();
+        $this->entreeEntreprise = new \DateTime();
     }
     
     

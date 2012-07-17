@@ -1,6 +1,9 @@
-<div class="well">
-	<form method="post" {{ form_enctype(form) }}>
-    	
+{% extends "RhUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    <div class="well">
+        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+            {# form_widget(form) #}
             {{ form_errors(form) }}
             <div>
                 {{ form_label(form.nom, "Nom") }}
@@ -8,7 +11,7 @@
                 {{ form_widget(form.nom) }}
             </div>
             <div>
-                {{ form_label(form.prenom, "Prénom") }}
+                {{ form_label(form.prenom, "Prenom") }}
                 {{ form_errors(form.prenom) }}
                 {{ form_widget(form.prenom) }}
             </div>
@@ -16,6 +19,11 @@
                 {{ form_label(form.email, "E-mail") }}
                 {{ form_errors(form.email) }}
                 {{ form_widget(form.email) }}
+            </div>
+            <div>
+                {{ form_label(form.username, "Matricule") }}
+                {{ form_errors(form.username) }}
+                {{ form_widget(form.username) }}
             </div>
             <div>
                 {{ form_label(form.plainPassword, "Mot de passe") }}
@@ -33,7 +41,9 @@
                 {{ form_widget(form.cadre) }}
             </div>
             {{ form_rest(form) }}
-
-    	<input type="submit" class="btn btn-primary"/>
-    </form>
-</div>
+            <div>
+                <input type="submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+{% endblock fos_user_content %}
