@@ -55,7 +55,7 @@ class UserController extends Controller
         if( $formHandler->process() )
         {
             // On affiche un message flash pour dire que l'utilisateur a été enregistré.
-            $this->get('session')->setFlash('success', 'Article bien enregistré');
+            $this->get('session')->setFlash('success', 'Utilisateur bien enregistré');
             // Puis on redirige vers la page de visualisation de cet article.
             return $this->redirect( $this->generateUrl('rhuser_index'));
         }

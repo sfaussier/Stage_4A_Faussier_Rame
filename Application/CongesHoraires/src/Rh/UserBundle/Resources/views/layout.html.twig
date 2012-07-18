@@ -4,11 +4,18 @@
 {# On d�fini le block body de notre layout #}
 {% block conteneur %}
 {# On y place le contenu du layout par défaut de FOSUB #}
-        {% for key, message in app.session.getFlashes() %}
-        <div class="{{ key }}">
-            {{ message|trans({}, 'FOSUserBundle') }}
-        </div>
-        {% endfor %}
+        {# On gère les messages flash de fa�on global pour tout le bundle #}
+	    {% for key, flash in app.session.getFlashes() %}
+		<div class="alert alert-{{ key }}">
+		    {% if key == "success" %}
+		    <a class="close" data-dismiss="alert" href="#">×</a>
+            <h4 class="alert-heading">Enregistré !</h4>
+            {% else %}
+                {{ message|trans({}, 'FOSUserBundle') }}
+            {% endif %}
+			{{ flash }}
+		</div>
+	    {% endfor %}
 
         {# Block utilisé pour le corps la page #}
         {% block fos_user_content %}

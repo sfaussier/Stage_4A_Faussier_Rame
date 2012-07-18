@@ -18,9 +18,20 @@
                 {{ form_widget(form.email) }}
             </div>
             <div>
-                {{ form_label(form.plainPassword, "Mot de passe") }}
-                {{ form_errors(form.plainPassword) }}
-                {{ form_row(form.plainPassword) }}
+                {# Petite manipe pour afficher les labels du champ plainPassword #}
+                {% set monLabel = 'mdp' %}
+                {% for passwordField in form.plainPassword %}
+                    <div>
+                        {% if monLabel == 'mdp' %}
+                            {{ form_label(passwordField, "Mot de passe") }}
+                            {% set monLabel = 'val' %}
+                        {% else %}
+                            {{ form_label(passwordField, "Validation") }}
+                        {% endif %}
+                        {{ form_errors(passwordField) }}
+                        {{ form_widget(passwordField) }}
+                    </div>
+                {% endfor %}
             </div>
             <div>
                 {{ form_label(form.entreeEntreprise, "Entrée dans l'entreprise") }}
@@ -32,8 +43,14 @@
                 {{ form_errors(form.cadre) }}
                 {{ form_widget(form.cadre) }}
             </div>
+            <div>
+                {{ form_label(form.roles, "Cadre") }}
+                {{ form_errors(form.roles) }}
+                {{ form_widget(form.roles) }}
+            </div>
             {{ form_rest(form) }}
-
-    	<input type="submit" class="btn btn-primary"/>
+            <div class="form-actions">
+    	        <input type="submit" class="btn btn-primary"/>
+    	    </div>
     </form>
 </div>

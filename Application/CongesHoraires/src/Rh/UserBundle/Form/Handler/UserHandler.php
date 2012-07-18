@@ -42,6 +42,7 @@ class UserHandler
     {
         $username = $user->getNom().$user->getPrenom();
         $user->setUsername($username);
+        $user->setEnabled(true);
         $this->em->persist($user);
         $this->em->flush();
     }

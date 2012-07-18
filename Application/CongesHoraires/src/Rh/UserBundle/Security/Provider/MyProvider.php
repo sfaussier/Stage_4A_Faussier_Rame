@@ -38,7 +38,7 @@ class MyProvider implements UserProviderInterface
 
         if (!$user) {
             throw new UsernameNotFoundException(
-                    sprintf('No user with name "%s" was found.', $username));
+                    sprintf('No user with name "%s" was found.', $email));
         }
 
         return $user;

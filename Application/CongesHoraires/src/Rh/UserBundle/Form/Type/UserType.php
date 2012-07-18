@@ -14,7 +14,12 @@ class UserType extends AbstractType
                 ->add('email')
                 ->add('plainPassword', 'repeated', array('type' => 'password'))
                 ->add('entreeEntreprise')
-                ->add('cadre');
+                ->add('cadre')
+                ->add('roles', 'choice', array(
+                        'choices' => array(
+                                'ROLE_UTILISATEUR' => 'ROLE_UTILISATEUR',
+                                'ROLE_ADMINISTRATEUR' => 'ROLE_ADMINISTRATEUR'),
+                        'multiple' => true));
     }
     
     public function getName()
