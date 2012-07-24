@@ -1,3 +1,119 @@
-RhAdminBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: RhAdminBundle:Default:index }
+RhAdmin_entreprise_ajouter:
+    pattern:   /entreprise/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:entrepriseAjouter" }
+
+
+RhAdmin_entreprise_voir:
+    pattern:   /entreprise/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:entrepriseVoir" }
+    requirements:
+        id:  \d+
+
+RhAdmin_entreprise_modifier:
+    pattern:   /entreprise/modifier/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:entrepriseModifier" }
+    requirements:
+        id:  \d+
+
+RhAdmin_entreprise_supprimer:
+    pattern:   /entreprise/supprimer/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:entrepriseSupprimer" }
+    requirements:
+        id:  \d+  
+
+RhAdmin_entreprise_ajouter_feriePont:
+    pattern:   /entreprise/{id}/ajoutFeriePont
+    defaults:  { _controller: "RhAdminBundle:Entreprise:entrepriseAjouterFeriePont" }
+    requirements:
+        id:  \d+
+        
+RhAdmin_entreprise_ajouter_contrat:
+    pattern:   /entreprise/{id}/ajoutContrat
+    defaults:  { _controller: "RhAdminBundle:Entreprise:entrepriseAjouterContrat" }
+    requirements:
+        id:  \d+  
+ 
+ 
+ 
+RhAdmin_feriePont_ajouter:
+    pattern:   /feriePont/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:feriePontAjouter" }
+
+RhAdmin_feriePont_voir:
+    pattern:   /feriePont/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:feriePontVoir" }
+    requirements:
+        id:  \d+
+
+RhAdmin_feriePont_modifier:
+    pattern:   /feriePont/modifier/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:feriePontModifier" }
+    requirements:
+        id:  \d+
+
+RhAdmin_feriePont_supprimer:
+    pattern:   /feriePont/supprimer/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:feriePontSupprimer" }
+    requirements:
+        id:  \d+  
+        
+        
+        
+RhAdmin_prime_ajouter:
+    pattern:   /prime/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:primeAjouter" }
+
+RhAdmin_prime_voir:
+    pattern:   /prime/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:primeVoir" }
+    requirements:
+        id:  \d+
+
+RhAdmin_prime_modifier:
+    pattern:   /prime/modifier/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:primeModifier" }
+    requirements:
+        id:  \d+
+
+RhAdmin_prime_supprimer:
+    pattern:   /prime/supprimer/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:primeSupprimer" }
+    requirements:
+        id:  \d+  
+        
+        
+
+RhAdmin_contratType_ajouter:
+    pattern:   /contrat/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:contratTypeAjouter" }
+
+RhAdmin_contratType_voir:
+    pattern:   /contrat/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:contratTypeVoir" }
+    requirements:
+        id:  \d+
+
+RhAdmin_contratType_modifier:
+    pattern:   /contrat/modifier/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:contratTypeModifier" }
+    requirements:
+        id:  \d+
+
+RhAdmin_contratType_supprimer:
+    pattern:   /contrat/supprimer/{id}
+    defaults:  { _controller: "RhAdminBundle:Admin:contratTypeSupprimer" }
+    requirements:
+        id:  \d+  
+
+
+
+RhAdmin_administration:
+    pattern:   /administration
+    defaults:  { _controller: "RhAdminBundle:Admin:administration" }
+    
+    
+RhAdmin_accueil_admin:
+    pattern:   /{page}
+    defaults:  { _controller: "RhAdminBundle:Admin:administration", page: 1}
+    requirements:
+        page:  \d+

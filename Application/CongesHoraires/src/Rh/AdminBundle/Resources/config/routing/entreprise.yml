@@ -28,3 +28,5 @@ entreprise_delete:
     pattern:  /{id}/delete
     defaults: { _controller: "RhAdminBundle:Entreprise:delete" }
     requirements: { _method: post }
+    
+    

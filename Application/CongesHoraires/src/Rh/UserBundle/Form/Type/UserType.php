@@ -16,10 +16,10 @@ class UserType extends AbstractType
                 ->add('entreeEntreprise')
                 ->add('cadre')
                 ->add('roles', 'choice', array(
-                        'choices' => array(
-                                'ROLE_UTILISATEUR' => 'ROLE_UTILISATEUR',
-                                'ROLE_ADMINISTRATEUR' => 'ROLE_ADMINISTRATEUR'),
-                        'multiple' => true));
+							                        'choices' => array(
+							                                'ROLE_UTILISATEUR' => 'ROLE_UTILISATEUR',
+							                                'ROLE_ADMINISTRATEUR' => 'ROLE_ADMINISTRATEUR'),
+							                        'multiple' => true));
     }
     
     public function getName()

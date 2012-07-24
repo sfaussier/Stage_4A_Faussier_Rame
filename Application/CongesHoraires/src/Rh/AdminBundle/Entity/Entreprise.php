@@ -9,135 +9,122 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 //relations
 use Rh\AdminBundle\Entity\FeriePont;
 
-
 /**
  * Rh\AdminBundle\Entity\Entreprise
  *
  * @ORM\Table(name="rh_entreprise")
  * @ORM\Entity(repositoryClass="Rh\AdminBundle\Entity\EntrepriseRepository")
  */
-class Entreprise
-{
-    /**
-     * @var integer $id
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
-     * @var string $nom
-     *
-     * @ORM\Column(name="nom", type="string", length=32, unique=true, nullable=true)
-     * @Assert\MinLength(limit=1, message="Le nom de l'entreprise doit faire au moins {{ limit }} caractère.")
-	 */
-    private $nom;
-
-    /**
-     * @var date $debutConges
-     *
-     * @ORM\Column(name="debutConges", type="date", nullable=true)
-	 * @Assert\DateTime()
-     */
-    private $debutConges;
-
-    /**
-     * @var date $finConges
-     *
-     * @ORM\Column(name="finConges", type="date", nullable=true)
-	 * @Assert\DateTime()
-     */
-    private $finConges;
-	
-	
+class Entreprise {
 	/**
-     * @ORM\ManyToMany(targetEntity="Rh\AdminBundle\Entity\FeriePont")
-     */
-    private $feriePonts;
-	public function __construct()
-    {
-        $this->FeriePonts = new \Doctrine\Common\Collections\ArrayCollection;
-    }
-	public function getFeriePonts()
-    {
-        return $this->feriePonts;
-    } 
-	public function addFeriePont(\Rh\AdminBundle\Entity\FeriePont $feriePont)
-    {
-        $this->feriePonts[] = $feriePont;
-    }
-	
-	
+	 * @var integer $id
+	 *
+	 * @ORM\Column(name="id", type="integer")
+	 * @ORM\Id
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	private $id;
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
+	/**
+	 * @var string $nom
+	 *
+	 * @ORM\Column(name="nom", type="string", length=32, unique=true, nullable=true)
+	 * @Assert\MinLength(limit=1, message="Le nom de l'entreprise doit faire au moins {{ limit }} caractï¿½re.")
+	 */
+	private $nom;
 
-    /**
-     * Set nom
-     *
-     * @param string $nom
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-    }
+	/**
+	 * @var date $debutConges
+	 *
+	 * @ORM\Column(name="debutConges", type="date", nullable=true)
+	 * @Assert\Date()
+	 */
+	private $debutConges;
 
-    /**
-     * Get nom
-     *
-     * @return string 
-     */
-    public function getNom()
-    {
-        return $this->nom;
-    }
+	/**
+	 * @var date $finConges
+	 *
+	 * @ORM\Column(name="finConges", type="date", nullable=true)
+	 * @Assert\Date()
+	 */
+	private $finConges;
 
-    /**
-     * Set debutConges
-     *
-     * @param date $debutConges
-     */
-    public function setDebutConges($debutConges)
-    {
-        $this->debutConges = $debutConges;
-    }
+	/**
+	 * @ORM\ManyToMany(targetEntity="Rh\AdminBundle\Entity\FeriePont")
+	 */
+	private $feriePonts;
 
-    /**
-     * Get debutConges
-     *
-     * @return date 
-     */
-    public function getDebutConges()
-    {
-        return $this->debutConges;
-    }
+	public function __construct() {
+		$this->feriePonts = new \Doctrine\Common\Collections\ArrayCollection;
 
-    /**
-     * Set finConges
-     *
-     * @param date $finConges
-     */
-    public function setFinConges($finConges)
-    {
-        $this->finConges = $finConges;
-    }
+	}
+	public function getFeriePonts() {
+		return $this->feriePonts;
+	}
+	public function addFeriePont(\Rh\AdminBundle\Entity\FeriePont $feriePont) {
+		$this->feriePonts[] = $feriePont;
+	}
 
-    /**
-     * Get finConges
-     *
-     * @return date 
-     */
-    public function getFinConges()
-    {
-        return $this->finConges;
-    }
+	/**
+	 * Get id
+	 *
+	 * @return integer 
+	 */
+	public function getId() {
+		return $this->id;
+	}
+
+	/**
+	 * Set nom
+	 *
+	 * @param string $nom
+	 */
+	public function setNom($nom) {
+		$this->nom = $nom;
+	}
+
+	/**
+	 * Get nom
+	 *
+	 * @return string 
+	 */
+	public function getNom() {
+		return $this->nom;
+	}
+
+	/**
+	 * Set debutConges
+	 *
+	 * @param date $debutConges
+	 */
+	public function setDebutConges($debutConges) {
+		$this->debutConges = $debutConges;
+	}
+
+	/**
+	 * Get debutConges
+	 *
+	 * @return date 
+	 */
+	public function getDebutConges() {
+		return $this->debutConges;
+	}
+
+	/**
+	 * Set finConges
+	 *
+	 * @param date $finConges
+	 */
+	public function setFinConges($finConges) {
+		$this->finConges = $finConges;
+	}
+
+	/**
+	 * Get finConges
+	 *
+	 * @return date 
+	 */
+	public function getFinConges() {
+		return $this->finConges;
+	}
 }
