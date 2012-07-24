@@ -1,0 +1,24 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Modification d'une prime
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+		<h2>Modifier une prime</h2>
+
+		{% include "RhAdminBundle:Admin:formulaire.html.twig" %}
+		
+		<p>
+			Vous allez éditer une prime existante.
+		</p>
+		
+		<p>
+			<a href="{{ path('RhAdmin_prime_voir', {'id': prime.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la prime
+			</a>
+		</p>
+	
+{% endblock %}

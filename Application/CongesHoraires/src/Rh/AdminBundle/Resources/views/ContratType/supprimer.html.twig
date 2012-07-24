@@ -1,0 +1,26 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Suppression d'un contrat
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>Suppression d'un contrat</h2>
+
+		<p>
+			Etes-vous sûr de vouloir supprimer ce contrat "{{ contratType.nom }}" ?
+			</p>
+			
+			<form method="post">
+				<input type="submit" value="Oui" class="btn-danger" />
+			</form>
+			
+			<p>
+			<a href="{{ path('RhAdmin_contratType_voir', {'id': contratType.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour au contrat
+			</a>
+		</p>
+	
+{% endblock %}

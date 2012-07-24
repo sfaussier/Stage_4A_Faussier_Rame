@@ -1,0 +1,26 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Suppression d'une prime
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>Suppression d'une prime</h2>
+
+		<p>
+			Etes-vous sûr de vouloir supprimer la prime "{{ prime.nom }}" ?
+			</p>
+			
+			<form method="post">
+				<input type="submit" value="Oui" class="btn-danger" />
+			</form>
+			
+			<p>
+			<a href="{{ path('RhAdmin_prime_voir', {'id': prime.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la prime
+			</a>
+		</p>
+	
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Ferié et Pont
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>{{ feriePont.nom }}</h2>
+	<i>Cela a lieu le {{ feriePont.date|date('d/m') }} et c'est de type {{ feriePont.type }} </i>
+
+ 	<p>
+		<a href="{{ path('RhAdmin_administration') }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la liste
+		</a>
+		<a href="{{ path('RhAdmin_feriePont_modifier', {'id':  feriePont.id}) }}" class="btn">
+			<i class="icon-edit"></i>
+			Modifier cet évenement
+		</a>
+		<a href="{{ path('RhAdmin_feriePont_supprimer', {'id': feriePont.id}) }}" class="btn">
+			<i class="icon-trash"></i>
+			Supprimer ce congé
+		</a>
+	</p>
+	
+{% endblock %}

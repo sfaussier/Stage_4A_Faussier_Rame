@@ -1,0 +1,24 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Modification d'un jour de congé
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+		<h2>Modifier un jour de congé</h2>
+
+		{% include "RhAdminBundle:FeriePont:formulaire.html.twig" %}
+		
+		<p>
+			Vous allez éditer un jour de congé existant.
+		</p>
+		
+		<p>
+			<a href="{{ path('RhAdmin_feriePont_voir', {'id': feriePont.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à ce jour de congé.
+			</a>
+		</p>
+	
+{% endblock %}

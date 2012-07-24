@@ -1,0 +1,86 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Administration
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>Entreprises:</h2>
+	<i></i>
+	<p>
+		<ul>	
+     	  {% for entreprise in entreprises %}
+				<p>				
+				<a href="{{ path('RhAdmin_entreprise_voir', {'id':  entreprise.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				     {{ entreprise.getNom() }}
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_entreprise_ajouter')}}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter une entreprise
+		</a>
+	</p>
+	
+	<h2>Primes:</h2>
+	<i></i>
+	<p>
+		<ul>	
+     	  {% for prime in primes %}
+				<p>				
+				<a href="{{ path('RhAdmin_prime_voir', {'id':  prime.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				     {{ prime.getNom() }}
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_prime_ajouter')}}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter un type de prime
+		</a>
+	</p>
+	
+	<h2>Fériés et Ponts:</h2>
+	<i></i>
+	<p>
+		<ul>	
+     	  {% for feriePont in feriePonts %}
+				<p>				
+				<a href="{{ path('RhAdmin_feriePont_voir', {'id':  feriePont.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				     {{ feriePont.getNom() }}
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_feriePont_ajouter')}}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter un jour de congé
+		</a>
+	</p>
+	
+	<h2>Type de Contrats:</h2>
+	<i></i>
+	<p>
+		<ul>	
+     	  {% for contrat in contrats %}
+				<p>				
+				<a href="{{ path('RhAdmin_contratType_voir', {'id':  contrat.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				     {{ contrat.getNom() }}
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_contratType_ajouter')}}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter un type de contrat
+		</a>
+	</p>
+
+	
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Gestion des jours de congés de l' entreprise
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+		<h2>Gérer les jours de congés de l'entreprise</h2>
+
+		{% include "RhAdminBundle:Entreprise:FPformulaire.html.twig" %}
+		
+		<p>
+			Vous allez éditer une entreprise existante.
+		</p>
+		
+		<p>
+			<a href="{{ path('RhAdmin_entreprise_voir', {'id': entreprise.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à l'entreprise
+			</a>
+		</p>
+	
+{% endblock %}

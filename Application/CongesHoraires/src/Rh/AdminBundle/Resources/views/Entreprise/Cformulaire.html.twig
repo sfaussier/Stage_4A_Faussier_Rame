@@ -1,0 +1,15 @@
+<div class="well">
+	<form method="post" {{ form_enctype(form) }}>
+    	
+            {{ form_errors(form) }}
+            <div>
+                {{ form_label(form.feriePonts, "Employés") }}
+                {{ form_errors(form.feriePonts) }}
+                {{ form_widget(form.feriePonts) }}
+            </div>          
+            {{ form_rest(form) }}
+            <div class="form-actions">
+    	        <input type="submit" class="btn btn-primary"/>
+    	    </div>
+    </form>
+</div>

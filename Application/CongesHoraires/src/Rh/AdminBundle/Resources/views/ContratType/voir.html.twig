@@ -1,0 +1,32 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Type de Contrat
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>{{ contratType.nom }}</h2>
+	
+	<i>Pour ce type de contrat le salarié doit faire "{{ contratType.heureHebdo }}" heures hebdomadaires
+	 ou doit travailler "{{ contratType.jourParAn }}" jour par an,
+	il a {{ contratType.rttAnnuels }} RTT annuel. <br>
+	Les heures sont compté majoré à partir de la {{ contratType.heureMajoree }} heures,
+	 et compté en super majoration à partir de la {{ contratType.heureSuperMajoree }}. </i><br> <br>
+
+ 	<p>
+		<a href="{{ path('RhAdmin_administration') }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la liste
+		</a>
+		<a href="{{ path('RhAdmin_contratType_modifier', {'id':  contratType.id}) }}" class="btn">
+			<i class="icon-edit"></i>
+			Modifier ce contrat
+		</a>
+		<a href="{{ path('RhAdmin_contratType_supprimer', {'id': contratType.id}) }}" class="btn">
+			<i class="icon-trash"></i>
+			Supprimer ce contrat
+		</a>
+	</p>
+	
+{% endblock %}

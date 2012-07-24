@@ -1,0 +1,24 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+	Admin
+{% endblock %}
+
+{% block conteneur %}
+
+	<h1></h1>
+
+	<hr>
+
+	{# On g�re les messages flash de fa�on global pour tout le bundle #}
+	{% for key, flash in app.session.getFlashes() %}
+		<div class="alert alert-{{ key }}">
+			{{ flash }}
+		</div>
+	{% endfor %}
+
+	{# On d�frinit un nouveau block, que les vues du bundle pourront �tendre #}
+	{% block RhAdmin_body %}
+	{% endblock %}
+
+{% endblock conteneur %}

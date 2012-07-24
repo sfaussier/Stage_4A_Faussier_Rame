@@ -1,0 +1,27 @@
+<h3>Formulaire de création de jour férié ou de pont</h3>
+
+<div class="well">
+
+	<form method="post" {{ form_enctype(form) }}>
+		 {{ form_errors(form) }}
+            <div>
+                {{ form_label(form.nom, "Nom") }}
+                {{ form_errors(form.nom) }}
+                {{ form_widget(form.nom) }}
+            </div>
+            <div>
+                {{ form_label(form.type, "Type de jour") }}
+                {{ form_errors(form.type) }}
+                {{ form_widget(form.type) }}
+            </div>
+             <div>
+                {{ form_label(form.date,"Date") }}
+                {{ form_errors(form.date) }}
+                {{ form_widget(form.date) }}
+            </div>
+            {{ form_rest(form) }}  
+            <div class="form-actions">
+    	        <input type="submit" class="btn btn-primary"/>
+    	    </div>
+	</form>
+</div>

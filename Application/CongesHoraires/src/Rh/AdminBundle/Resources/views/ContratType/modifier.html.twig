@@ -1,0 +1,24 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Modification d'un contrat
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+		<h2>Modifier un contrat</h2>
+
+		{% include "RhAdminBundle:Admin:formulaire.html.twig" %}
+		
+		<p>
+			Vous aller éditer un contrat existant.
+		</p>
+		
+		<p>
+			<a href="{{ path('RhAdmin_contratType_voir', {'id': contratType.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour au contrat
+			</a>
+		</p>
+	
+{% endblock %}

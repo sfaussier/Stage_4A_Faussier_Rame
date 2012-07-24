@@ -1,0 +1,71 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	L'entreprise
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>{{ entreprise.nom }}</h2>
+	<i>Le début des congés d'été commence le {{ entreprise.debutConges|date('d/m') }} et fini le {{ entreprise.finConges|date('d/m') }} </i>
+
+	<p>
+		<a href="{{ path('RhAdmin_administration') }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la liste
+		</a>
+		<a href="{{ path('RhAdmin_entreprise_modifier', {'id':  entreprise.id}) }}" class="btn">
+			<i class="icon-edit"></i>
+			Modifier l'entreprise
+		</a>
+		<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
+			<i class="icon-trash"></i>
+			Supprimer l'entreprise
+		</a>
+	</p>
+	<p>
+		<i>Voici les jours de congés de l'entreprise:</i>
+		
+		<ul>	
+     	  {% for feriePont in feriePonts %}
+				<p>				
+				<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
+					<i class="icon-trash"></i>
+				</a>
+				<a href="{{ path('RhAdmin_entreprise_modifier', {'id':  entreprise.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				    Le {{ feriePont.date|date('d/m') }},    {{ feriePont.nom }} ({{feriePont.type}})
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_entreprise_ajouter_feriePont', {'id':  entreprise.id}) }}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter un jour de congé
+		</a>
+	</p>
+	
+	<p>
+		<i>Voici les contrats de l'entreprise:</i>
+		
+		<ul>	
+     	  {% for contrat in contrats %}
+				<p>				
+				<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
+					<i class="icon-trash"></i>
+				</a>
+				<a href="{{ path('RhAdmin_entreprise_modifier', {'id':  entreprise.id}) }}" class="btn">
+					<i class="icon-edit"></i>
+				</a>
+				    Le {{ contrat.salaireBase }}{{ contrat.entreprise.nom }}{{ contrat.utilisateur.prenom }}
+			</p>
+		  {% endfor %}
+		</ul>
+		<a href="{{ path('RhAdmin_entreprise_ajouter_contrat', {'id':  entreprise.id}) }}" class="btn">
+				<i class="icon-edit"></i>
+				Rajouter un contrat
+		</a>
+	</p>
+	
+	
+{% endblock %}

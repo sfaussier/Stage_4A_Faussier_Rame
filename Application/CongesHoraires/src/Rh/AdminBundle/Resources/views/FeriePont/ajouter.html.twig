@@ -1,0 +1,17 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Ajouter un jour férié ou un pont
+{% endblock titre%}
+
+{% block RhAdmin_body %}
+
+	<h2>Ajouter un jour férié ou un pont</h2>
+
+	{% include "RhAdminBundle:FeriePont:formulaire.html.twig" %}
+
+	<p>
+		Vous allez ajouter une journée chaumée.
+	</p>
+
+{% endblock %}
