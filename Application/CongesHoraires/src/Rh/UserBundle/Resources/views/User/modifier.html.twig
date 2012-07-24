@@ -1,0 +1,12 @@
+{% extends 'RhUserBundle::layout.html.twig' %}
+
+{% block fos_user_content %}
+    <h2>Modifier un utilisateur</h2>
+    {% include 'RhUserBundle:User:formulaire.html.twig' %}    
+    <p>
+        <a href="{{ path('rhuser_index') }}" class="btn" >
+			<i class="icon-chevron-left"></i>
+			Accueil
+		</a>
+    </p>
+{% endblock fos_user_content %}

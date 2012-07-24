@@ -1,6 +1,5 @@
 <div class="well">
 	<form method="post" {{ form_enctype(form) }}>
-    	
             {{ form_errors(form) }}
             <div>
                 {{ form_label(form.nom, "Nom") }}
@@ -11,6 +10,11 @@
                 {{ form_label(form.prenom, "Prénom") }}
                 {{ form_errors(form.prenom) }}
                 {{ form_widget(form.prenom) }}
+            </div>
+            <div>
+                {{ form_label(form.username, "Nom d'utilisateur") }}
+                {{ form_errors(form.username) }}
+                {{ form_widget(form.username) }}
             </div>
             <div>
                 {{ form_label(form.email, "E-mail") }}
@@ -26,7 +30,7 @@
                             {{ form_label(passwordField, "Mot de passe") }}
                             {% set monLabel = 'val' %}
                         {% else %}
-                            {{ form_label(passwordField, "Validation") }}
+                            {{ form_label(passwordField, "Validation du mot de passe") }}
                         {% endif %}
                         {{ form_errors(passwordField) }}
                         {{ form_widget(passwordField) }}
@@ -44,7 +48,7 @@
                 {{ form_widget(form.cadre) }}
             </div>
             <div>
-                {{ form_label(form.roles, "Cadre") }}
+                {{ form_label(form.roles, "Roles") }}
                 {{ form_errors(form.roles) }}
                 {{ form_widget(form.roles) }}
             </div>

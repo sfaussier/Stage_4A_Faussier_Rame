@@ -1,15 +1,18 @@
 {# On étend le layout de base de notre site #}
 {% extends "::layout.html.twig" %}
 
-{# On d�fini le block body de notre layout #}
+{# On défini le block body de notre layout #}
 {% block conteneur %}
 {# On y place le contenu du layout par défaut de FOSUB #}
-        {# On gère les messages flash de fa�on global pour tout le bundle #}
+        {# On gère les messages flash de façon globale pour tout le bundle #}
 	    {% for key, flash in app.session.getFlashes() %}
 		<div class="alert alert-{{ key }}">
 		    {% if key == "success" %}
 		    <a class="close" data-dismiss="alert" href="#">×</a>
             <h4 class="alert-heading">Enregistré !</h4>
+            {% elseif key == "error" %}
+                <a class="close" data-dismiss="alert" href="#">×</a>
+                <h4 class="alert-heading">Erreur !</h4>
             {% else %}
                 {{ message|trans({}, 'FOSUserBundle') }}
             {% endif %}

@@ -2,13 +2,17 @@
 
 namespace Rh\UserBundle\Entity;
 
+use FOS\UserBundle\Validator\Unique;
+
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="rh_user")
+ * @UniqueEntity("username")
  */
 class User extends BaseUser
 {
@@ -31,6 +35,12 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * Cet attribut est surchargé pour pouvoir dire qu'il est unique.
+     * @var string
+     */
+    protected $username;
     
     /**
      * ***************** Déclaration des attributs de notre propre classe User *****************

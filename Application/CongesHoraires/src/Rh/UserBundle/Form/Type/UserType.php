@@ -11,15 +11,16 @@ class UserType extends AbstractType
     {
         $builder->add('nom')
                 ->add('prenom')
+                ->add('username')
                 ->add('email')
                 ->add('plainPassword', 'repeated', array('type' => 'password'))
                 ->add('entreeEntreprise')
                 ->add('cadre')
                 ->add('roles', 'choice', array(
-							                        'choices' => array(
-							                                'ROLE_UTILISATEUR' => 'ROLE_UTILISATEUR',
-							                                'ROLE_ADMINISTRATEUR' => 'ROLE_ADMINISTRATEUR'),
-							                        'multiple' => true));
+                        'choices' => array(
+                                'ROLE_UTILISATEUR' => 'Utilisateur',
+                                'ROLE_ADMINISTRATEUR' => 'Administrateur'),
+                        'multiple' => true));
     }
     
     public function getName()

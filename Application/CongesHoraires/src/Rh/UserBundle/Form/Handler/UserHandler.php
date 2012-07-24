@@ -32,16 +32,16 @@ class UserHandler
             if ($this->form->isValid())
             {
                 $this->onSuccess($this->form->getData());
-                return true;
+                return "true";
+            } else {
+                return "error";
             }
         }
-        return false;
+        return "false";
     }
     
     public function onSuccess(User $user)
     {
-        $username = $user->getNom().$user->getPrenom();
-        $user->setUsername($username);
         $user->setEnabled(true);
         $this->em->persist($user);
         $this->em->flush();
