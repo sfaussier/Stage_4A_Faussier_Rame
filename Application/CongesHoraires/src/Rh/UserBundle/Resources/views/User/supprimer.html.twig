@@ -1,0 +1,29 @@
+{% extends 'RhUserBundle::layout.html.twig' %}
+{% block fos_user_content %}
+    <h2>Supprimer un utilisateur</h2>
+    <div class="well">
+        <form method="post" action="{{ path('rhuser_supprimer', {'id': user.id}) }}">
+            Voulez-vous vraiment supprimer l'utilisateur suivant ?
+            <table class="table table-striped">
+                <thead>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>E-mail</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.nom }}</td>
+                        <td>{{ user.prenom }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {{ form_rest(form) }}
+            <input type="submit" class="btn btn-danger" value="Supprimer"/>
+        </form>
+    </div>
+{% endblock fos_user_content %}

@@ -5,3 +5,17 @@ rhuser_index:
 rhuser_ajouter: 
     pattern: /ajouter
     defaults: { _controller: RhUserBundle:User:ajouter }
+    
+rhuser_list:
+    pattern: /list
+    defaults: { _controller: RhUserBundle:User:list }
+    
+rhuser_modifier:
+    pattern: /modifier/{id}
+    defaults: { _controller: RhUserBundle:User:modifier }
+    requirements: 
+        id: \d+
+
+rhuser_supprimer: 
+    pattern: /supprimer/{id}
+    defaults: { _controller: RhUserBundle:User:supprimer }
