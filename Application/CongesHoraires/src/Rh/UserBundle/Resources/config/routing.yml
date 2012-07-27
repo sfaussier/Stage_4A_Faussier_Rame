@@ -23,3 +23,7 @@ rhuser_supprimer:
 rhuser_chef: 
     pattern: /addChef/{id}
     defaults: { _controller: RhUserBundle:User:addChef }
+    
+rhuser_listChef: 
+    pattern: /listChef
+    defaults: { _controller: RhUserBundle:User:listChef }

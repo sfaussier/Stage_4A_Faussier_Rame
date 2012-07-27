@@ -23,21 +23,13 @@ class UserRepository extends EntityRepository
             ->from('RhUserBundle:User', 'u')
             ->where('u.chef IS NULL')
             ->orWhere('u.chef = :chef')
+            ->setParameter('chef', $idChef)
+            ->andWhere('u.id != :chef')
             ->setParameter('chef', $idChef);
         
         return $qb->getQuery()->getResult();
     }
     
-    
-    /**
-     * Fonction qui retourne tous les utilisateurs ayant le role passé en paramètre
-     * 
-     * 
-     */
-    public function searchUserByRole()
-    {
-        
-    }
     
     /**
      *

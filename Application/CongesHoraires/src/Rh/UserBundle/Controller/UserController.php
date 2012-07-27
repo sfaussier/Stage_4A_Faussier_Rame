@@ -109,13 +109,36 @@ class UserController extends Controller
      */
     public function listChefAction()
     {
-        // On récupère notre UserRepository
-        $userRepo = $this->getDoctrine()->getEntityManager()->getRepository('RhUserBundle:User');
-        
-        // On appelle la fonction de récupération des CHEF
-        $chefs = $userRepo->searchUserByRole();
-        
-        return 'Fonction pas encore terminée';
+        $request = $this->getRequest();
+        // On rentre dans la condition si le mot "search" est dans l'url en tant que paramètre.
+        if ($request->query->has('search'))
+        {
+            // On récupère notre UserRepository
+            $userRepo = $this->getDoctrine()->getEntityManager()->getRepository('RhUserBundle:User');
+            
+            // On appelle la fonction de récupération des utilisateurs
+            $users = $userRepo->searchUserByName($request->query->get('search'));
+            
+            // On instancie le tableau des chefs
+            $chefs = array();
+            // Pour chaque utilisateur, on vérifie si il a le le ROLE_CHEF ou non
+            foreach ($users as $user)
+            {
+                $roles = $user->getRoles();
+                foreach ($roles as $role)
+                {
+                    if ($role == 'ROLE_CHEF')
+                    {
+                        $chefs[] = $user;
+                    }
+                }
+            }
+            // On retourne la page avec la liste des chefs.
+            return $this->render('RhUserBundle:User:listChef.html.twig', array(
+                    'chefs' => $chefs));
+        }
+        // On retourne la page sans données.
+       return $this->render('RhUserBundle:User:listChef.html.twig'); 
     }
     
     
@@ -249,7 +272,7 @@ class UserController extends Controller
                             'chef' => $chef));
                 }
                 $this->get('session')->setFlash('success', 'L\'équipe de '.$chef->getPrenom().' '.$chef->getNom().' a bien été modifée.');
-                return $this->redirect($this->generateUrl('rhuser_index'));
+                return $this->redirect($this->generateUrl('rhuser_listChef'));
             }
         }
         
