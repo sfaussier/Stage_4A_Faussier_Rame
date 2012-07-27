@@ -3,6 +3,7 @@
 "Bad credentials": "Utilisateur ou mot de passe incorrect"
 "The presented password is invalid.": "Mot de passe incorrect"
 "Your session has timed-out, or you have disabled cookies.": "La session a expirée. Veuillez vous reconnecter"
+"User account is disabled.": "L'utilisateur n'est pas activé. Contactez l'administrateur."
 
 security.login.username: "Adresse e-mail :"
 

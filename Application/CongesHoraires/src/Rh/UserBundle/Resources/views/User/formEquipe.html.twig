@@ -1,0 +1,13 @@
+{% extends 'RhUserBundle::layout.html.twig' %}
+
+{% block fos_user_content %}
+<div class="well">
+    <h2>Gestion de l'équipe de {{ chef.prenom }} {{ chef.nom }}</h2>
+    <form class="form-inline" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <div class="form-actions">
+	        <input type="submit" class="btn btn-primary" value="Valider" />
+	    </div>
+    </form>
+</div>
+{% endblock fos_user_content %}
