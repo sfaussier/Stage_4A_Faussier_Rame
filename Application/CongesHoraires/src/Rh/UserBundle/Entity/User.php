@@ -21,6 +21,7 @@ class User extends BaseUser
      * username : matricule de notre utilisateur
      * email : email de l'utilsateur
      * password : password de l'utilisateur
+     * roles : tableau des droits de l'utilisateur
      * 
      * Ces attributs ne seront pas ajoutés dans la liste ci-dessous car ils sont hérités de 
      * la classe FOSUserBundle().

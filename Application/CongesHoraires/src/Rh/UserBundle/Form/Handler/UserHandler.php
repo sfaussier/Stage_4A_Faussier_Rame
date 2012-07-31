@@ -8,6 +8,11 @@ use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
 
+/**
+ * 
+ * @author Simon
+ *
+ */
 class UserHandler
 {
     protected $form;

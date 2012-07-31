@@ -4,6 +4,11 @@ namespace Rh\UserBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
+/**
+ * 
+ * @author Simon
+ *
+ */
 class UserRepository extends EntityRepository
 {
     
@@ -32,7 +37,7 @@ class UserRepository extends EntityRepository
     
     
     /**
-     *
+     * Fonction de recherche d'utilisateur par rapport à une chaine de caractères.
      * @param unknown_type $name
      */
     public function searchUserByName($name)
