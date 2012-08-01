@@ -5,23 +5,20 @@ namespace Rh\UserBundle\Controller;
 use Rh\UserBundle\RhUserBundle;
 
 use Symfony\Component\BrowserKit\Request;
-
-use Rh\UserBundle\Form\Handler\UserHandler;
-
-use Rh\UserBundle\Form\Type\UserType;
-use Rh\UserBundle\Form\Type\ChefType;
-
-use FOS\UserBundle\Entity\UserManager;
-
-use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
-
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
 use JMS\SecurityExtraBundle\Annotation\Secure;
+
+use FOS\UserBundle\Entity\UserManager;
 use FOS\UserBundle\Model\UserManagerInterface;
+
 use Rh\UserBundle\Entity\User;
+use Rh\UserBundle\Repository\UserRepository;
+use Rh\UserBundle\Form\Handler\UserHandler;
 use Rh\UserBundle\Form\Type\RechercheUserFormType;
-use Rh\UserBundle\Entity\UserRepository;
+use Rh\UserBundle\Form\Type\UserType;
+use Rh\UserBundle\Form\Type\ChefType;
 
 /**
  * Classe du controleur de UserBundle

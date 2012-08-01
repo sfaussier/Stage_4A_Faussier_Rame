@@ -5,7 +5,7 @@ namespace Rh\UserBundle\Repository;
 use Doctrine\ORM\EntityRepository;
 
 /**
- * 
+ * Classe contenant les requêtes sur l'entitée User.
  * @author Simon
  *
  */
