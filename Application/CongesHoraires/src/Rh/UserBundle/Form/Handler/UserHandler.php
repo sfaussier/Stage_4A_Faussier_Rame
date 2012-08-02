@@ -30,7 +30,7 @@ class UserHandler
     {
         if( $this->request->getMethod() == 'POST' )
         {
-            // Ici, on s'occupera de la création et de la gestion du formulaire.
+            // Ici, on s'occupe de la création et de la gestion du formulaire.
             $this->form->bindRequest($this->request);
     
             // On vérifie que les valeurs du formulaire sont correctes

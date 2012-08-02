@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
 use JMS\SecurityExtraBundle\Annotation\Secure;
 
+use Rh\UserBundle\Entity\ProfilHeureMax;
 use Rh\UserBundle\Repository\ProfilHeureMaxRepository;
 
 /**
@@ -17,7 +18,14 @@ use Rh\UserBundle\Repository\ProfilHeureMaxRepository;
  * @author Simon
  *
  */
-class ProfilHMaxController extends Controller
+class ProfilHeureMaxController extends Controller
 {
     
+    public function addAction()
+    {
+        // Création de mon ProfilHeureMax
+        $myPhm = new ProfilHeureMax();
+        
+        
+    }
 }

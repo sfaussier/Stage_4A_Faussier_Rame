@@ -22,8 +22,10 @@ class UserRepository extends EntityRepository
      */
     public function recupUserSansChefOuChefDefini($idChef)
     {
+        // Récupération du QueryBuilder de Doctrine.
         $qb = $this->getEntityManager()->createQueryBuilder();
         
+        // Création de la requête.
         $qb->select('u')
             ->from('RhUserBundle:User', 'u')
             ->where('u.chef IS NULL')
@@ -32,12 +34,14 @@ class UserRepository extends EntityRepository
             ->andWhere('u.id != :chef')
             ->setParameter('chef', $idChef);
         
+        // Envoie du résultat de la requête.
         return $qb->getQuery()->getResult();
     }
     
     
     /**
      * Fonction de recherche d'utilisateur par rapport à une chaine de caractères.
+     * 
      * @param unknown_type $name
      */
     public function searchUserByName($name)
@@ -70,15 +74,18 @@ class UserRepository extends EntityRepository
             ->set('u.chef', 'NULL')
             ->where('u.chef = :chef')
             ->setParameter('chef', $chefId);
+        // Exécution de la requête UPDATE.
         $p = $qb->getQuery()->execute();
 
         // Seconde requête pour lier les User à leur Chef
+        // On fait cette requête uniquement si il y a des employés pour le chef.
         if (!empty($employes)) {
             $qb->update('RhUserBundle:User', 'u')
                 ->set('u.chef', ':chef')
                 ->where('u.id IN (:employes)')
                 ->setParameter('chef', $chefId)
                 ->setParameter('employes', $employes);
+            // Exécution de la requête UPDATE.
             $p = $qb->getQuery()->execute();
         }
     }

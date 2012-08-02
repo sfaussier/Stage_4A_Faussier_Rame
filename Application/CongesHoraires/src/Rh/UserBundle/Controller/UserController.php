@@ -51,13 +51,7 @@ class UserController extends Controller
     {
          // Création de mon propre utilisateur créé avec mon entitée
         $monUtilisateur = new User();
-    
-        // Récupération du User Manager de FOSUB
-        $userManager = $this->container->get('fos_user.user_manager');
-    
-        // Création d'un utilisateur qu'on récupère dans la variable $user
-        $user = $userManager->createUser();
-        
+
         // Création du formulaire
         $form = $this->createForm(new UserType, $monUtilisateur);
         
@@ -225,7 +219,7 @@ class UserController extends Controller
             $entity = $em->getRepository('RhUserBundle:User')->find($id);
             // Si il n'y a pas d'entitée USER correspondant à cet ID,
             if (!$entity) {
-                // On affiche un message flash pour dire que l'utilisateur a été enregistré.
+                // On affiche un message flash pour dire qu'il y a eu une erreur de suppression.
                 $this->get('session')->setFlash('error', 'Erreur de suppression.');
                 throw $this->createNotFoundException('Impossible de trouver l\'entitée.');
             } else {
@@ -234,7 +228,7 @@ class UserController extends Controller
                 // Puis on sauvegarde dans la BDD.
                 $em->flush();
                 
-                // On affiche un message flash pour dire que l'utilisateur a été modifié.
+                // On affiche un message flash pour dire que l'utilisateur a été supprimé.
                 $this->get('session')->setFlash('success', 'Utilisateur supprimé.');
                 // On redirige vers la page de la liste des utilisateurs (page de recherche).
                 return $this->redirect($this->generateUrl('rhuser_list'));
