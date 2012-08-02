@@ -13,7 +13,7 @@ use Rh\AdminBundle\Entity\FeriePont;
  * Rh\AdminBundle\Entity\Entreprise
  *
  * @ORM\Table(name="rh_entreprise")
- * @ORM\Entity(repositoryClass="Rh\AdminBundle\Entity\EntrepriseRepository")
+ * @ORM\Entity(repositoryClass="Rh\AdminBundle\Repository\EntrepriseRepository")
  */
 class Entreprise {
 	/**

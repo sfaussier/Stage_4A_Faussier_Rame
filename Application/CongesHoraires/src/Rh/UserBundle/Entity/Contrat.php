@@ -38,6 +38,20 @@ class Contrat
 	 */
 	private $salaireBase;
 	
+	/**
+	 * @var string $matricule
+	 *
+	 * @ORM\Column(name="matricule", type="string", length=4, nullable=true)
+	 * @Assert\NotBlank()
+	 **/
+	private $matricule;
+	
+	/**
+	 * @var boolean $termine
+	 *
+	 * @ORM\Column(name="termine", type="boolean", nullable=true)
+	 **/
+	private $termine;
 	
 	
 	
@@ -95,20 +109,52 @@ class Contrat
 		$this->contratType=$contratType;
 	}
 	/**
-	 * Get utilisateur
+	 * Get user
 	 *
 	 * @return integer
 	 */
-	public function getUtilisateur() {
-		return $this->utilisateur;
+	public function getUser() {
+		return $this->user;
 	}
 	/**
-	 * Set utilisateur
+	 * Set user
 	 *
-	 * @param integer $utilisateur
+	 * @param integer $user
 	 */
-	public function setUtilisateur($utilisateur) {
-		$this->utilisateur=$utilisateur;
+	public function setUser($user) {
+		$this->user=$user;
+	}
+	/**
+	 * Get matricule
+	 *
+	 * @return string
+	 */
+	public function getMatricule() {
+		return $this->user;
+	}
+	/**
+	 * Set matricule
+	 *
+	 * @param string $matricule
+	 */
+	public function setMatricule($matricule) {
+		$this->matricule=$matricule;
+	}
+	/**
+	 * Get termine
+	 *
+	 * @return boolean
+	 */
+	public function getTermine() {
+		return $this->termine;
+	}
+	/**
+	 * Set termine
+	 *
+	 * @param boolean $termine
+	 */
+	public function setTermine($termine) {
+		$this->termine=$termine;
 	}
 	
 }

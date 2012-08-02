@@ -11,7 +11,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  * Rh\AdminBundle\Entity\ContratType
  *
  * @ORM\Table(name="rh_contrattype")
- * @ORM\Entity(repositoryClass="Rh\AdminBundle\Entity\ContratTypeRepository")
+ * @ORM\Entity(repositoryClass="Rh\AdminBundle\Repository\ContratTypeRepository")
  */
 class ContratType {
 	/**

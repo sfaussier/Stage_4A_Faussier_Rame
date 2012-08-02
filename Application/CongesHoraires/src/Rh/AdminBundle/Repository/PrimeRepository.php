@@ -1,6 +1,6 @@
 <?php
 
-namespace Rh\AdminBundle\Entity;
+namespace Rh\AdminBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

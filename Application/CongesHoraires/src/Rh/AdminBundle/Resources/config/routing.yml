@@ -33,6 +33,19 @@ RhAdmin_entreprise_ajouter_contrat:
     requirements:
         id:  \d+  
  
+RhAdmin_entreprise_modifier_contrat:
+    pattern:   /entreprise/{id}/modifierContrat/{idcontrat}
+    defaults:  { _controller: "RhAdminBundle:Entreprise:entrepriseModifierContrat" }
+    requirements:
+        id:  \d+  
+        idcontrat: \d+
+        
+RhAdmin_entreprise_supprimer_contrat:
+    pattern:   /entreprise/{id}/supprimerContrat/{idcontrat}
+    defaults:  { _controller: "RhAdminBundle:Entreprise:entrepriseSupprimerContrat" }
+    requirements:
+        id:  \d+ 
+        idcontrat: \d+ 
  
  
 RhAdmin_feriePont_ajouter:
@@ -108,7 +121,7 @@ RhAdmin_contratType_supprimer:
 
 
 RhAdmin_administration:
-    pattern:   /administration
+    pattern:   /
     defaults:  { _controller: "RhAdminBundle:Admin:administration" }
     
     

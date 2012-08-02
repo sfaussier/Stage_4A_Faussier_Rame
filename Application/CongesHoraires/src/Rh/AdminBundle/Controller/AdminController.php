@@ -3,7 +3,7 @@
 namespace Rh\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
-use Rh\AdminBundle\Entity\EntrepriseRepository;
+use Rh\AdminBundle\Repository\EntrepriseRepository;
 
 use Rh\AdminBundle\Entity\Entreprise;
 use Rh\AdminBundle\Form\EntrepriseType;
@@ -29,14 +29,14 @@ class AdminController extends Controller {
 
 	public function entrepriseVoirAction(Entreprise $entreprise) {
 
-		$listeFeriePonts = $this->getDoctrine()->getEntityManager()
-				->getRepository('RhAdminBundle:Entreprise')
-				->chercherFeriePonts($entreprise);
+		$listeFeriePonts = $this->getDoctrine()
+		->getEntityManager()
+		->getRepository('RhAdminBundle:Entreprise')
+		->chercherFeriePonts($entreprise);
 		
 		$listeContrats = $this->getDoctrine()->getEntityManager()
 				->getRepository('RhUserBundle:Contrat')
 				->findByEntreprise($entreprise->getId());
-		var_dump($listeContrats);
 
 		return $this
 				->render('RhAdminBundle:Admin:voir.html.twig',
@@ -114,7 +114,7 @@ class AdminController extends Controller {
 	}
 
 	public function administrationAction() {
-		$listeEntreprises = $this->getDoctrine()->getEntityManager()
+		$listeEntreprises = $this->getDoctrine()->getEntityManager()		
 				->getRepository('RhAdminBundle:Entreprise')->findAll();
 		$listeContrat = $this->getDoctrine()->getEntityManager()
 				->getRepository('RhAdminBundle:ContratType')->findAll();
@@ -186,6 +186,7 @@ class AdminController extends Controller {
 								'feriePont' => $feriePont));
 	}
 
+	
 	public function feriePontSupprimerAction(FeriePont $feriePont) {
 		if ($this->get('request')->getMethod() == 'POST') {
 			$em = $this->getDoctrine()->getEntityManager();

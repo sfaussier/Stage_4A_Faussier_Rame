@@ -83,17 +83,32 @@
                             <li><a href="{{ path('rhuser_list') }}">Administrer</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                   
+                   <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Entreprises
+                            Contrats
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Ajouter</a></li>
-                            <li><a href="#">Modifier</a></li>
-                            <li><a href="#">Supprimer</a></li>
+                            <li><a href="{{ path('RhAdmin_entreprise_ajouter') }}">Ajouter</a></li>
+                            <li><a href="#">Rechercher</a></li>
                         </ul>
                     </li>
+                   
+                   
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Administrer
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('RhAdmin_administration') }}">Page d'administration</a></li>
+                            <li><a href="{{ path('RhAdmin_entreprise_ajouter') }}">Ajouter Entreprise</a></li>
+                            <li><a href="{{ path('RhAdmin_feriePont_ajouter') }}">Ajouter Férié/Pont</a></li>
+                            <li><a href="{{ path('RhAdmin_contratType_ajouter') }}">Ajouter Contrat Type</a></li>
+                        </ul>
+                    </li>
+                    
                 {% endif %}
             </ul>
             

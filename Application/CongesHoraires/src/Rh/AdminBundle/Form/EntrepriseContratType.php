@@ -8,7 +8,7 @@ use Symfony\Component\Form\FormBuilder;
 class EntrepriseContratType extends AbstractType {
 	public function buildForm(FormBuilder $builder, array $options) {
 		$builder
-		->add('utilisateur', 'entity',
+		->add('user', 'entity',
 				array('class' => 'Rh\UserBundle\Entity\User',
 						'property' => 'nom','multiple' => false))
 		->add('contratType', 'entity',

@@ -51,13 +51,13 @@
 		<ul>	
      	  {% for contrat in contrats %}
 				<p>				
-				<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
+				<a href="{{ path('RhAdmin_entreprise_supprimer_contrat', {'id': entreprise.id,'idcontrat': entreprise.id}) }}" class="btn">
 					<i class="icon-trash"></i>
 				</a>
-				<a href="{{ path('RhAdmin_entreprise_modifier', {'id':  entreprise.id}) }}" class="btn">
+				<a href="{{ path('RhAdmin_entreprise_modifier_contrat', {'id':  entreprise.id,'idcontrat': entreprise.id}) }}" class="btn">
 					<i class="icon-edit"></i>
 				</a>
-				    Le {{ contrat.salaireBase }}{{ contrat.entreprise.nom }}{{ contrat.utilisateur.prenom }}
+				    {{ contrat.user.nom }} a un contrat de type {{ contrat.contratType.nom }}
 			</p>
 		  {% endfor %}
 		</ul>

@@ -1,8 +1,10 @@
 <?php
 
-namespace Rh\AdminBundle\Entity;
+namespace Rh\AdminBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+
+use Rh\AdminBundle\Entity\Entreprise;
 
 /**
  * EntrepriseRepository
@@ -18,7 +20,8 @@ class EntrepriseRepository extends EntityRepository {
 		$qb = $em->createQueryBuilder();
 		$qb->select('f.nom', 'f.date', 'f.type')
 				->from('RhAdminBundle:Entreprise', 'e')
-				->join('e.feriePonts', 'f')->where('e.id = :idEntreprise')
+				->join('e.feriePonts', 'f')
+				->where('e.id = :idEntreprise')
 				->setParameter('idEntreprise', $id->getId());
 		$query = $qb->getQuery();
 		return $query->getResult();

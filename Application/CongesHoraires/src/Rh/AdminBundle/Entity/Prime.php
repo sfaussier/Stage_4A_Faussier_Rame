@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Rh\AdminBundle\Entity\Prime
  *
  * @ORM\Table(name="rh_prime")
- * @ORM\Entity(repositoryClass="Rh\AdminBundle\Entity\PrimeRepository")
+ * @ORM\Entity(repositoryClass="Rh\AdminBundle\Repository\PrimeRepository")
  */
 class Prime {
 	/**

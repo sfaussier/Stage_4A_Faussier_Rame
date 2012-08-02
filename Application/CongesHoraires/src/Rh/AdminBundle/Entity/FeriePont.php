@@ -11,7 +11,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  * Rh\AdminBundle\Entity\FeriePont
  *
  * @ORM\Table(name="rh_feriePont")
- * @ORM\Entity(repositoryClass="Rh\AdminBundle\Entity\FeriePontRepository")
+ * @ORM\Entity(repositoryClass="Rh\AdminBundle\Repository\FeriePontRepository")
  */
 class FeriePont {
 	/**

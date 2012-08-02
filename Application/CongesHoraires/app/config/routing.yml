@@ -10,6 +10,26 @@ RhAdminBundle:
     resource: "@RhAdminBundle/Resources/config/routing.yml"
     prefix:   /admin
     
+    
+RhAdmin_administration:
+    resource: "@RhAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin/
+    
+RhAdmin_entreprise_ajouter:
+    pattern:   /entreprise/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:entrepriseAjouter" }
+    
+RhAdmin_feriePont_ajouter:
+    pattern:   /feriePont/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:feriePontAjouter" }
+    
+RhAdmin_contratType_ajouter:
+    pattern:   /contrat/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:contratTypeAjouter" }    
+       
+    
+    
+    
 RhUserBundle: 
     resource: "@RhUserBundle/Resources/config/routing.yml"
     prefix: /user
