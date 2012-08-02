@@ -1,0 +1,24 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Ajout de contrat dans l'entreprise
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+		<h2>Ajout de contrat</h2>
+
+		{% include "RhAdminBundle:Admin:formulaire.html.twig" %}
+		
+		<p>
+			Vous allez ajouter un contrat.
+		</p>
+		
+		<p>
+			<a href="{{ path('RhAdmin_entreprise_voir', {'id': entreprise.id}) }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à l'entreprise
+			</a>
+		</p>
+	
+{% endblock %}
