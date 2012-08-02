@@ -19,6 +19,8 @@ class UserType extends AbstractType
                 ->add('roles', 'choice', array(
                         'choices' => array(
                                 'ROLE_UTILISATEUR' => 'Utilisateur',
+                                'ROLE_CHEF' => 'Chef d\'équipe',
+                                'ROLE_RH' => 'Responsable RH',
                                 'ROLE_ADMINISTRATEUR' => 'Administrateur'),
                         'multiple' => true));
     }

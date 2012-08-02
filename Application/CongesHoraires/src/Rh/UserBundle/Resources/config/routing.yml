@@ -19,3 +19,11 @@ rhuser_modifier:
 rhuser_supprimer: 
     pattern: /supprimer/{id}
     defaults: { _controller: RhUserBundle:User:supprimer }
+    
+rhuser_chef: 
+    pattern: /addChef/{id}
+    defaults: { _controller: RhUserBundle:User:addChef }
+    
+rhuser_listChef: 
+    pattern: /listChef
+    defaults: { _controller: RhUserBundle:User:listChef }

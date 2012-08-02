@@ -48,7 +48,8 @@
                 {{ form_widget(form.cadre) }}
             </div>
             <div>
-                {{ form_label(form.roles, "Roles") }}
+                </br>
+                <p>{{ form_label(form.roles, "Roles") }}<small> (sélection multiple : CTRL+click)</small></p>
                 {{ form_errors(form.roles) }}
                 {{ form_widget(form.roles) }}
             </div>

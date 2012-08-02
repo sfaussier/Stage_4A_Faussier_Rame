@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Rh\UserBundle\Repository\UserRepository")
  * @ORM\Table(name="rh_user")
  * @UniqueEntity("username")
  */
@@ -21,10 +21,18 @@ class User extends BaseUser
      * username : matricule de notre utilisateur
      * email : email de l'utilsateur
      * password : password de l'utilisateur
+     * roles : tableau des droits de l'utilisateur
      * 
      * Ces attributs ne seront pas ajoutés dans la liste ci-dessous car ils sont hérités de 
      * la classe FOSUserBundle().
      */
+    
+    /**
+     * Un utilisateur peut être le chef d'autres utilisateurs.
+     * 
+     * @ORM\ManyToOne(targetEntity="Rh\UserBundle\Entity\User")
+     */
+    protected $chef;
     
     /**
      * Cet attribut est surchargé mais fait parti de FOSUserBundle.
@@ -539,5 +547,23 @@ class User extends BaseUser
     public function setCadre($cadre)
     {
         $this->cadre = $cadre;
+    }
+    
+    /**
+     * Get chef
+     * @return \Rh\UserBundle\Entity\User
+     */
+    public function getChef()
+    {
+        return $this->chef;
+    }
+    
+    /**
+     * Set chef
+     * @param \Rh\UserBundle\Entity\User $chef
+     */
+    public function setChef(\Rh\UserBundle\Entity\User $chef)
+    {
+        $this->chef = $chef;
     }
 }

@@ -9,3 +9,7 @@ services:
         arguments: [%fos_user.model.user.class%]
         tags: 
             - { name: form.type, alias: rh_user_registration }
+            
+    rh_user.search.service:
+        class: Rh\UserBundle\Service\Search\Basic
+        arguments: [ @doctrine.orm.entity_manager ]

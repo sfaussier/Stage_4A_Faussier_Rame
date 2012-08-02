@@ -2,18 +2,13 @@
 
 namespace Rh\UserBundle\Form\Handler;
 
-use Rh\UserBundle\Entity\User;
+use Rh\UserBundle\Entity\ProfilHeureMax;
 
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
 
-/**
- * 
- * @author Simon
- *
- */
-class UserHandler
+class ProfilHeureMaxHandler
 {
     protected $form;
     protected $request;
@@ -47,7 +42,6 @@ class UserHandler
     
     public function onSuccess(User $user)
     {
-        $user->setEnabled(true);
         $this->em->persist($user);
         $this->em->flush();
     }
