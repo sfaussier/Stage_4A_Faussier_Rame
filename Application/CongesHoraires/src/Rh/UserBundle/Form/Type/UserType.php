@@ -25,6 +25,9 @@ class UserType extends AbstractType
                         'multiple' => true));
     }
     
+    /**
+     * Fonction permettant d'identifier ce formType en retournant son nom.
+     */
     public function getName()
     {
         return 'rh_user_usertype';

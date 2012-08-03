@@ -8,6 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
+ * Entité permettant de relier l'utilisateur à une entreprise et un contrat type.
  * Rh\UserBundle\Entity\Contrat
  * @ORM\Entity
  * @ORM\Table(name="rh_contrat")

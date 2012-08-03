@@ -46,6 +46,7 @@ class UserController extends Controller
     
     /**
      * Fonction permettant d'ajouter un utilisateur
+     * @Secure(roles="ROLE_ADMINISTRATEUR, ROLE_RH")
      */
     public function ajouterAction()
     {
@@ -103,6 +104,7 @@ class UserController extends Controller
     
     /**
      * Fonction qui retourne la liste des chefs
+     * @Secure(roles="ROLE_ADMINISTRATEUR, ROLE_RH")
      */
     public function listChefAction()
     {
@@ -192,7 +194,7 @@ class UserController extends Controller
     
     /**
      * Fonction permettant de supprimer l'utilisateur désigné par l'id.
-     * 
+     * @Secure(roles="ROLE_ADMINISTRATEUR, ROLE_RH")
      * @param int $id
      */
     public function supprimerAction($id)
@@ -243,7 +245,7 @@ class UserController extends Controller
     
     /**
      * Fonction qui permet d'afficher le formulaire d'ajout de chef (construction d'une équipe)
-     * 
+     * @Secure(roles="ROLE_ADMINISTRATEUR, ROLE_RH")
      * @param int $id
      */
     public function addChefAction($id)

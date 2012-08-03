@@ -46,14 +46,17 @@ class UserRepository extends EntityRepository
      */
     public function searchUserByName($name)
     {
+        // Récupération du QueryBuilder de Doctrine.
         $qb = $this->getEntityManager()->createQueryBuilder();
     
+        // Création de la requête.
         $qb->select('u')
         ->from('RhUserBundle:User', 'u')
         ->where('u.nom LIKE :nomCle')
         ->orderBy('u.nom', 'ASC')
         ->setParameter('nomCle', '%'.$name.'%');
     
+        // Envoie du résultat de la requête.
         return $qb->getQuery()->getResult();
     }
     
@@ -67,6 +70,7 @@ class UserRepository extends EntityRepository
      */
     public function saveEmployes($chefId, $employes)
     {
+        // Récupération du QueryBuilder de Doctrine.
         $qb = $this->getEntityManager()->createQueryBuilder();
         
         // Requête pour mettre les CHEF a NULL pour nos utilisateurs manipulés.
