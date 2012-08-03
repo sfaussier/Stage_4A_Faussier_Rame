@@ -34,7 +34,7 @@ class Contrat
 	/**
 	 * @var float $salaireBase
 	 *
-	 * @ORM\Column(name="salaireBase", type="float")
+	 * @ORM\Column(name="salaireBase", type="float", nullable=true)
 	 */
 	private $salaireBase;
 	

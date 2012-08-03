@@ -1,0 +1,27 @@
+<h3></h3>
+
+<div class="well">
+
+	<form method="post" {{ form_enctype(form) }}>
+		 {{ form_errors(form) }}
+            <div>
+                {{ form_label(form.nom, "Nom") }}
+                {{ form_errors(form.nom) }}
+                {{ form_widget(form.nom) }}
+            </div>
+            <div>
+                {{ form_label(form.debutConges, "Début des Conges") }}
+                {{ form_errors(form.debutConges) }}
+                {{ form_widget(form.debutConges) }}
+            </div>
+             <div>
+                {{ form_label(form.finConges,"Fin des Conges") }}
+                {{ form_errors(form.finConges) }}
+                {{ form_widget(form.finConges) }}
+            </div>
+            {{ form_rest(form) }}  
+            <div class="form-actions">
+    	        <input type="submit" class="btn btn-primary"/>
+    	    </div>
+	</form>
+</div>

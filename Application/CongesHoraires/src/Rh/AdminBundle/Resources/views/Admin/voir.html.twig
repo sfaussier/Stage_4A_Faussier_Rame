@@ -28,20 +28,15 @@
 		
 		<ul>	
      	  {% for feriePont in feriePonts %}
-				<p>				
-				<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
-					<i class="icon-trash"></i>
-				</a>
-				<a href="{{ path('RhAdmin_entreprise_modifier', {'id':  entreprise.id}) }}" class="btn">
-					<i class="icon-edit"></i>
-				</a>
-				    Le {{ feriePont.date|date('d/m') }},    {{ feriePont.nom }} ({{feriePont.type}})
+			<p>				
+
+				  Le {{ feriePont.date|date('d/m') }},    {{ feriePont.nom }} ({{feriePont.type}})
 			</p>
 		  {% endfor %}
 		</ul>
 		<a href="{{ path('RhAdmin_entreprise_ajouter_feriePont', {'id':  entreprise.id}) }}" class="btn">
 				<i class="icon-edit"></i>
-				Rajouter un jour de congé
+				Modifier les jours de congé
 		</a>
 	</p>
 	
@@ -50,11 +45,11 @@
 		
 		<ul>	
      	  {% for contrat in contrats %}
-				<p>				
-				<a href="{{ path('RhAdmin_entreprise_supprimer_contrat', {'id': entreprise.id,'idcontrat': entreprise.id}) }}" class="btn">
+			<p>				
+				<a href="{{ path('RhAdmin_entreprise_supprimer_contrat', {'id': entreprise.id,'idcontrat': contrat.user.id}) }}" class="btn">
 					<i class="icon-trash"></i>
 				</a>
-				<a href="{{ path('RhAdmin_entreprise_modifier_contrat', {'id':  entreprise.id,'idcontrat': entreprise.id}) }}" class="btn">
+				<a href="{{ path('RhAdmin_entreprise_modifier_contrat', {'id':  entreprise.id,'idcontrat': contrat.user.id}) }}" class="btn">
 					<i class="icon-edit"></i>
 				</a>
 				    {{ contrat.user.nom }} a un contrat de type {{ contrat.contratType.nom }}

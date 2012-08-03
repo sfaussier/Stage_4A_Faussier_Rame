@@ -2,6 +2,8 @@
 
 namespace Rh\AdminBundle\Form;
 
+use Rh\AdminBundle\Entity\Entreprise;
+
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
@@ -33,8 +35,6 @@ class EntrepriseContratHandler {
 	}
 
 	public function onSuccess(Contrat $contrat) {
-		//$contrat->setEntreprise($_GET['id']);
-		//$contrat->setEntreprise('2');
 		$this->em->persist($contrat);
 		$this->em->flush();
 	}

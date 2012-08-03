@@ -3,8 +3,40 @@
 <div class="well">
 
 	<form method="post" {{ form_enctype(form) }}>
-		{{ form_widget(form) }}
-
-		<input type="submit" />
+		 {{ form_errors(form) }}
+            <div>
+                {{ form_label(form.nom, "Nom") }}
+                {{ form_errors(form.nom) }}
+                {{ form_widget(form.nom) }}
+            </div>
+            <div>
+                {{ form_label(form.heureHebdo, "Heure Hebdomadaire") }}
+                {{ form_errors(form.heureHebdo) }}
+                {{ form_widget(form.heureHebdo) }}
+            </div>
+             <div>
+                {{ form_label(form.jourParAn,"Jour par An") }}
+                {{ form_errors(form.jourParAn) }}
+                {{ form_widget(form.jourParAn) }}
+            </div>
+             <div>
+                {{ form_label(form.rttAnnuels, "RTT Annuels") }}
+                {{ form_errors(form.rttAnnuels) }}
+                {{ form_widget(form.rttAnnuels) }}
+            </div>
+            <div>
+                {{ form_label(form.heureMajoree, "Heure Majoree") }}
+                {{ form_errors(form.heureMajoree) }}
+                {{ form_widget(form.heureMajoree) }}
+            </div>
+             <div>
+                {{ form_label(form.heureSuperMajoree,"Heure Super Majoree") }}
+                {{ form_errors(form.heureSuperMajoree) }}
+                {{ form_widget(form.heureSuperMajoree) }}
+            </div>
+            {{ form_rest(form) }}  
+            <div class="form-actions">
+    	        <input type="submit" class="btn btn-primary"/>
+    	    </div>
 	</form>
 </div>

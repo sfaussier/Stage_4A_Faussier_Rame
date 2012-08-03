@@ -6,7 +6,9 @@ use Symfony\Component\Form\FormBuilder;
 
 class EntrepriseType extends AbstractType {
 	public function buildForm(FormBuilder $builder, array $options) {
-		$builder->add('nom')->add('debutConges')->add('finConges');
+		$builder->add('nom')
+		->add('debutConges')
+		->add('finConges');
 	}
 
 	public function getName() {

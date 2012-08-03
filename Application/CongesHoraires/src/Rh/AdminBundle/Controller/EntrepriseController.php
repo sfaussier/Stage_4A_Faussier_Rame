@@ -23,6 +23,7 @@ use JMS\SecurityExtraBundle\Annotation\Secure;
 
 class EntrepriseController extends Controller {
 
+	//permet d'ajouter des jours férié a une entreprise
 	public function entrepriseAjouterFeriePontAction(Entreprise $entreprise) {
 
 		// On crée le formulaire
@@ -51,16 +52,19 @@ class EntrepriseController extends Controller {
 	}
 	
 	
+	//permet d'ajouter des contrat à l'entreprise
 	public function entrepriseAjouterContratAction(Entreprise $entreprise) {
 	
 		$contrat = new Contrat();
+		$contrat->setEntreprise($entreprise);
 		// On crée le formulaire
 		$form = $this->createForm(new EntrepriseContratType, $contrat);
-	
+
 		// On crée le gestionnaire pour ce formulaire, avec les outils dont il a besoin
 		$formHandler = new EntrepriseContratHandler($form, $this->get('request'),
 				$this->getDoctrine()->getEntityManager());
 	
+		
 		// On exécute le traitement du formulaire. S'il retourne true, alors le formulaire a bien été traité
 		if ($formHandler->process()) {
 	
@@ -79,6 +83,8 @@ class EntrepriseController extends Controller {
 				));
 	}
 	
+	//permet de modifier de le contrat d'une entreprise,
+	// NE MARCHE PAS, en effet comme contrat a 3 attributs il faut faire une fonction dans le repository
 	public function entrepriseModifierContratAction(Entreprise $entreprise) {
 	
 		$contrat = new Contrat();
@@ -100,37 +106,11 @@ class EntrepriseController extends Controller {
 		// Et s'il retourne false alors la requête n'était pas en POST ou le formulaire non valide.
 		// On réaffiche donc le formulaire.
 		return $this
-		->render('RhAdminBundle:Entreprise:Cajouter.html.twig',
+		->render('RhAdminBundle:Entreprise:Cmodifier.html.twig',
 				array('form' => $form->createView(),
 						'entreprise' => $entreprise,
 	
-				));
-		
-		
-		$form = $this->createForm(new EntrepriseContratType, $contrat);
-		$formHandler = new EntrepriseContratHandler($form, $this->get('request'),
-				$this->getDoctrine()->getEntityManager());
-		
-		if ($formHandler->process()) {
-			return $this
-			->redirect(
-					$this
-					->generateUrl('RhAdmin_feriePont_voir',
-							array('id' => $feriePont->getId())));
-		}
-		
-		return $this
-		->render('RhAdminBundle:Entreprise:Cmodifier.html.twig',
-				array('form' => $form->createView(),
-						'feriePont' => $feriePont));
-		
-		
-		
-		
-		
-		
-		
-		
+				));		
 	}
 	
 }

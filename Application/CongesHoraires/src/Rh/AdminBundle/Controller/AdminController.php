@@ -1,6 +1,8 @@
 <?php
 
 namespace Rh\AdminBundle\Controller;
+use Rh\UserBundle\Entity\Contrat;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Rh\AdminBundle\Repository\EntrepriseRepository;
@@ -27,6 +29,8 @@ use JMS\SecurityExtraBundle\Annotation\Secure;
 
 class AdminController extends Controller {
 
+//entreprise	
+	//Permet de voir les attribut de l'entreprise
 	public function entrepriseVoirAction(Entreprise $entreprise) {
 
 		$listeFeriePonts = $this->getDoctrine()
@@ -47,7 +51,8 @@ class AdminController extends Controller {
 						
 						);
 	}
-
+	
+	//permet d'ajouter une entreprise
 	public function entrepriseAjouterAction() {
 
 		$entreprise = new Entreprise;
@@ -74,7 +79,8 @@ class AdminController extends Controller {
 				->render('RhAdminBundle:Admin:ajouter.html.twig',
 						array('form' => $form->createView(),));
 	}
-
+	
+	//permet de modifier une entreprise
 	public function entrepriseModifierAction(Entreprise $entreprise) {
 
 		$form = $this->createForm(new EntrepriseType, $entreprise);
@@ -94,7 +100,8 @@ class AdminController extends Controller {
 						array('form' => $form->createView(),
 								'entreprise' => $entreprise));
 	}
-
+	
+	//permet de supprimer une entreprise
 	public function entrepriseSupprimerAction(Entreprise $entreprise) {
 		if ($this->get('request')->getMethod() == 'POST') {
 			$em = $this->getDoctrine()->getEntityManager();
@@ -113,6 +120,9 @@ class AdminController extends Controller {
 						array('entreprise' => $entreprise));
 	}
 
+
+//gestion
+	//permet d'avoir une vue d'ensemble
 	public function administrationAction() {
 		$listeEntreprises = $this->getDoctrine()->getEntityManager()		
 				->getRepository('RhAdminBundle:Entreprise')->findAll();
@@ -132,6 +142,8 @@ class AdminController extends Controller {
 						));
 	}
 
+//Ferie	
+	//permet d'ajouter un jour férié
 	public function feriePontAjouterAction() {
 
 		$feriePont = new FeriePont;
@@ -161,11 +173,15 @@ class AdminController extends Controller {
 				->render('RhAdminBundle:FeriePont:ajouter.html.twig',
 						array('form' => $form->createView(),));
 	}
+	
+	//permet d'ajouter un jour ferié
 	public function feriePontVoirAction(FeriePont $feriePont) {
 		return $this
 				->render('RhAdminBundle:FeriePont:voir.html.twig',
 						array('feriePont' => $feriePont));
 	}
+	
+	//permet de modifier un jour férié
 	public function feriePontModifierAction(FeriePont $feriePont) {
 
 		$form = $this->createForm(new FeriePontType, $feriePont);
@@ -186,7 +202,7 @@ class AdminController extends Controller {
 								'feriePont' => $feriePont));
 	}
 
-	
+	//permet de supprimer un jour férié
 	public function feriePontSupprimerAction(FeriePont $feriePont) {
 		if ($this->get('request')->getMethod() == 'POST') {
 			$em = $this->getDoctrine()->getEntityManager();
@@ -205,12 +221,15 @@ class AdminController extends Controller {
 						array('feriePont' => $feriePont));
 	}
 
+//prime
+	//permet de voir les attribut d'une prime
 	public function primeVoirAction(Prime $prime) {
 		return $this
 				->render('RhAdminBundle:Prime:voir.html.twig',
 						array('prime' => $prime));
 	}
 
+	//Fonction pour ajouter une prime
 	public function primeAjouterAction() {
 
 		$prime = new Prime;
@@ -237,6 +256,8 @@ class AdminController extends Controller {
 				->render('RhAdminBundle:Prime:ajouter.html.twig',
 						array('form' => $form->createView(),));
 	}
+	
+	//Fonction pour modifier une prime
 	public function primeModifierAction(Prime $prime) {
 
 		$form = $this->createForm(new PrimeType, $prime);
@@ -256,6 +277,7 @@ class AdminController extends Controller {
 						array('form' => $form->createView(), 'prime' => $prime));
 	}
 
+	//Fonction pour supprimer une prime
 	public function primeSupprimerAction(Prime $prime) {
 		if ($this->get('request')->getMethod() == 'POST') {
 			$em = $this->getDoctrine()->getEntityManager();
@@ -274,12 +296,15 @@ class AdminController extends Controller {
 						array('prime' => $prime));
 	}
 
+//ContratType
+	//permet de voir les attribut d'un contrat type
 	public function contratTypeVoirAction(ContratType $contratType) {
 		return $this
 				->render('RhAdminBundle:ContratType:voir.html.twig',
 						array('contratType' => $contratType));
 	}
 
+	//Permet d'ajouter un contrat type
 	public function contratTypeAjouterAction() {
 
 		$contratType = new ContratType();
@@ -307,6 +332,7 @@ class AdminController extends Controller {
 						array('form' => $form->createView(),));
 	}
 
+	//Permet de modifier un contratType
 	public function contratTypeModifierAction(ContratType $contratType) {
 
 		$form = $this->createForm(new ContratTypeType, $contratType);
@@ -327,6 +353,7 @@ class AdminController extends Controller {
 								'contratType' => $contratType));
 	}
 
+	//Permet de supprimer un contrat
 	public function contratTypeSupprimerAction(ContratType $contratType) {
 		if ($this->get('request')->getMethod() == 'POST') {
 			$em = $this->getDoctrine()->getEntityManager();
@@ -343,6 +370,17 @@ class AdminController extends Controller {
 		return $this
 				->render('RhAdminBundle:ContratType:supprimer.html.twig',
 						array('contratType' => $contratType));
+	}
+	
+	//permet de voir les attribut d'un contrat
+	public function contratVoirAction(Contrat $contrat) {
+	
+		return $this
+		->render('RhAdminBundle:Entreprise:Cvoir.html.twig',
+				array('contrat' => $contrat
+				)
+	
+		);
 	}
 
 }

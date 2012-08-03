@@ -1,0 +1,34 @@
+{% extends "RhAdminBundle::layout.html.twig" %}
+
+{% block titre %}
+	Contrat
+{% endblock titre %}
+
+{% block RhAdmin_body %}
+
+	<h2>contrat</h2>
+	
+	 Le contrat appartient à {{ contrat.user.nom }}<br>
+	 de type:{{ contrat.contratType.nom }}<br>
+	 dans l'entreprise {{ contrat.entreprise.nom }}<br>
+	 avec un salaire de base de {{ contrat.salaireBase }}<br>
+	
+	
+	<p>
+		<a href="{{ path('RhAdmin_administration') }}" class="btn">
+			<i class="icon-chevron-left"></i>
+			Retour à la liste
+		</a>
+		<a href="{{ path('RhAdmin_contrat_modifier', {'id':  entreprise.id}) }}" class="btn">
+			<i class="icon-edit"></i>
+			Modifier l'entreprise
+		</a>
+		<a href="{{ path('RhAdmin_entreprise_supprimer', {'id': entreprise.id}) }}" class="btn">
+			<i class="icon-trash"></i>
+			Supprimer l'entreprise
+		</a>
+	</p>
+
+	
+	
+{% endblock %}

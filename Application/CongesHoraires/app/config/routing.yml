@@ -31,7 +31,9 @@ RhAdmin_contratType_ajouter:
     pattern:   /contrat/ajout
     defaults:  { _controller: "RhAdminBundle:Admin:contratTypeAjouter" }    
        
-    
+RhAdmin_prime_ajouter:
+    pattern:   /prime/ajout
+    defaults:  { _controller: "RhAdminBundle:Admin:primeAjouter" }        
     
     
 RhUserBundle: 

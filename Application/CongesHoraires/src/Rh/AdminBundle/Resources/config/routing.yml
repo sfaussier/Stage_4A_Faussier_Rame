@@ -97,26 +97,34 @@ RhAdmin_prime_supprimer:
         
 
 RhAdmin_contratType_ajouter:
-    pattern:   /contrat/ajout
+    pattern:   /contratType/ajout
     defaults:  { _controller: "RhAdminBundle:Admin:contratTypeAjouter" }
 
 RhAdmin_contratType_voir:
-    pattern:   /contrat/{id}
+    pattern:   /contratType/{id}
     defaults:  { _controller: "RhAdminBundle:Admin:contratTypeVoir" }
     requirements:
         id:  \d+
 
 RhAdmin_contratType_modifier:
-    pattern:   /contrat/modifier/{id}
+    pattern:   /contratType/modifier/{id}
     defaults:  { _controller: "RhAdminBundle:Admin:contratTypeModifier" }
     requirements:
         id:  \d+
 
 RhAdmin_contratType_supprimer:
-    pattern:   /contrat/supprimer/{id}
+    pattern:   /contratType/supprimer/{id}
     defaults:  { _controller: "RhAdminBundle:Admin:contratTypeSupprimer" }
     requirements:
         id:  \d+  
+        
+        
+        
+RhAdmin_contrat_voir:
+    pattern:   /contrat/{id}
+    defaults:  { _controller: "RhAdminBundle:Entreprise:contratVoir" }
+    requirements:
+        id:  \d+      
 
 
 

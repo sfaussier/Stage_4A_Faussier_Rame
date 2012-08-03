@@ -14,12 +14,9 @@ class EntrepriseContratType extends AbstractType {
 		->add('contratType', 'entity',
 				array('class' => 'Rh\AdminBundle\Entity\ContratType',
 						'property' => 'nom','multiple' => false))
-		->add('entreprise', 'entity',
-				array('class' => 'Rh\AdminBundle\Entity\Entreprise',
-						'property' => 'nom','multiple' => false))
 		->add('salaireBase')
-	/*	->add('entreprise', 'hidden', array(
-				'entreprise' => '1',))*/
+		->add('matricule')
+		->add('termine')
 		;
 	}
 
